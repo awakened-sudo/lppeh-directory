@@ -1,0 +1,534 @@
+
+
+<!DOCTYPE html>
+
+<html>
+<head><title>
+	LPPEH Search
+</title>
+    <!--Import Google Icon Font-->
+    <link href="/Content/iconfont/material-icons.css" rel="stylesheet" />
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="/Content/css/materialize.min.css" media="screen,projection" /><link type="text/css" rel="stylesheet" href="/Content/css/Master.css" /><link type="text/css" rel="stylesheet" href="/Content/css/font-awesome.min.css" />
+
+    <!--Initialize favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" /><link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" /><link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" /><link rel="manifest" href="/favicons/manifest.json" /><link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5" /><link rel="shortcut icon" href="/favicons/favicon.ico" /><meta name="msapplication-config" content="/favicons/browserconfig.xml" /><meta name="theme-color" content="#ffffff" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link href="/WebResource.axd?d=hk86lBi5EbSkt88ZqAvwuH-Yph2HeEEvVEEJTnWgB1YmofTbc-FkTWmhccV8yIQVR25T0YTf6BP0ZN3EtSaVuOXStaU1QzpnubwsHOTz-jo-QWsvXtvoQN6OuOYDn2oycxV13zjkjtGy1SotYGELDw2&amp;t=637278647340000000" type="text/css" rel="stylesheet" class="Telerik_stylesheet" /><link href="/WebResource.axd?d=eQGlh3jmwhIboJ4weA0F7w2CzFwru-mXMWhsAMAcuLdFPchpq4E1DWwbBT7xcgXA3oC58TTLqVTQNI0pM81CGFyFWC9T8MItcb81sl77yI4ET6aNe5gg6FN04mHzfBVyYLjKLA3zbiTpE3uiWuHp6ZdSmlZdACpmG4mfbspyez81&amp;t=637278647340000000" type="text/css" rel="stylesheet" class="Telerik_stylesheet" /></head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="http://lppeh.gov.my" class="brand-logo" style="text-decoration: none;">
+                    <img src="http://lppeh.gov.my/WP2016/wp-content/uploads/2018/01/LPPEH_LOGO_NEW.png" style="max-height: 50px; margin: 5px; display: inline-block; vertical-align: middle;" />Search - Lembaga Penilai, Pentaksir, Ejen Harta Tanah dan Pengurus Harta</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="http://lppeh.gov.my/">Home</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <form method="post" action="./" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="ContentPlaceHolder1_ToolkitScriptManager1_HiddenField" id="ContentPlaceHolder1_ToolkitScriptManager1_HiddenField" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE0ODE5MjU1NjgPFhAeCGlzTWVtYmVyaB4FUmVnTm9lHgRTa2lwZh4JUGFnZUNvdW50BwAAAAAAAElAHgtDdXJyZW50UGFnZQIBHgpTZWFyY2hUeXBlAgEeCUZpbHRlckZvcmUeCVN0YXRlRGVzYwUIU0VMQU5HT1IWAmYPZBYCAgMPZBYCAgEPZBYCAgMPZBYCZg9kFggCAQ9kFgQCFQ9kFgICAQ8WAh4FdmFsdWVkZAInD2QWBAIBDxYCHwhkZAIDDxYCHwhkZAIDDxYCHglpbm5lcmh0bWwFwGA8ZGl2IGNsYXNzPSJjYXJkLXBhbmVsIGJsdWUgZGFya2VuLTIiPiA8c3BhbiBjbGFzcz0id2hpdGUtdGV4dCI+TGlzdGluZyBvZiBhY3RpdmUgZmlybXMgaW4gTFBQRUguIDxpPig0OTUgcmVzdWx0cyk8L2k+PC9zcGFuPiA8L2Rpdj48dWwgaWQ9InVsUmVzdWx0Ij48bGk+PGJsb2NrcXVvdGU+U0VMQU5HT1I8L2Jsb2NrcXVvdGU+PGRpdiBjbGFzcz0iY2FyZC1wYW5lbCI+IDxzdHJvbmc+PGkgY2xhc3M9ImZhIGZhLWlkLWNhcmQtbyIgYXJpYS1oaWRkZW49InRydWUiPjwvaT4mbmJzcDtBRSAoMykgMDAwNjwvc3Ryb25nPgk8cD48aSBjbGFzcz0iZmEgZmEtYnVpbGRpbmctbyIgYXJpYS1oaWRkZW49InRydWUiPjwvaT4mbmJzcDszTCBFTlRFUlBSSVNFUzwvcD4JPHA+PGkgY2xhc3M9ImZhIGZhLW1hcC1tYXJrZXIiIGFyaWEtaGlkZGVuPSJ0cnVlIj48L2k+Jm5ic3A7PGEgaHJlZj0iaHR0cDovL21hcHMuZ29vZ2xlLmNvbS8/cT1OTy4gNjZBLCBKQUxBTiBTUyAyMS8zOSwgREFNQU5TQVJBIFVUQU1BLCA0NzQwMCBQRVRBTElORyBKQVlBICBTRUxBTkdPUiIgdGFyZ2V0PSJfYmxhbmsiIGNsYXNzPSJ0b29sdGlwcGVkIiBkYXRhLXBvc2l0aW9uPSJib3R0b20iIGRhdGEtZGVsYXk9IjUwIiBkYXRhLXRvb2x0aXA9IkNsaWNrIHRvIG9wZW4gR29vZ2xlIE1hcHMiPk5PLiA2NkEsIEpBTEFOIFNTIDIxLzM5LCBEQU1BTlNBUkEgVVRBTUEsIDQ3NDAwIFBFVEFMSU5HIEpBWUEgIFNFTEFOR09SPC9hPjwvcD4JPHA+PGkgY2xhc3M9ImZhIGZhLXBob25lIiBhcmlhLWhpZGRlbj0idHJ1ZSI+PC9pPiZuYnNwOzxhIGhyZWY9InRlbDorNjAzLTc3Mjg5MjMzIiBjbGFzcz0idG9vbHRpcHBlZCIgZGF0YS1wb3NpdGlvbj0iYm90dG9tIiBkYXRhLWRlbGF5PSI1MCIgZGF0YS10b29sdGlwPSJDbGljayB0byBjYWxsIHRoaXMgbnVtYmVyIChpZiBhcHBsaWNhYmxlKSI+MDMtNzcyODkyMzM8L2E+PC9wPgk8cD48aSBjbGFzcz0iZmEgZmEtZmF4IiBhcmlhLWhpZGRlbj0idHJ1ZSI+PC9pPiZuYnNwOy08L2E+PC9wPgk8cD48aSBjbGFzcz0iZmEgZmEtZW52ZWxvcGUiIGFyaWEtaGlkZGVuPSJ0cnVlIj48L2k+Jm5ic3A7PGEgaHJlZj0ibWFpbHRvOnRoZV8zbEB5YWhvby5jb20iIGNsYXNzPSJ0b29sdGlwcGVkIiBkYXRhLXBvc2l0aW9uPSJib3R0b20iIGRhdGEtZGVsYXk9IjUwIiBkYXRhLXRvb2x0aXA9IkNsaWNrIHRvIGVtYWlsIHRoaXMgYWRkcmVzcyAoaWYgYXBwbGljYWJsZSkiPnRoZV8zbEB5YWhvby5jb208L2E+PC9wPjwvZGl2PjwvbGk+PGxpPjxkaXYgY2xhc3M9ImNhcmQtcGFuZWwiPiA8c3Ryb25nPjxpIGNsYXNzPSJmYSBmYS1pZC1jYXJkLW8iIGFyaWEtaGlkZGVuPSJ0cnVlIj48L2k+Jm5ic3A7RSAoMykgMjA4Nzwvc3Ryb25nPgk8cD48aSBjbGFzcz0iZmEgZmEtYnVpbGRpbmctbyIgYXJpYS1oaWRkZW49InRydWUiPjwvaT4mbmJzcDs1QSBSRUFMVFk8L3A+CTxwPjxpIGNsYXNzPSJmYSBmYS1tYXAtbWFya2VyIiBhcmlhLWhpZGRlbj0idHJ1ZSI+PC9pPiZuYnNwOzxhIGhyZWY9Imh0dHA6Ly9tYXBzLmdvb2dsZS5jb20vP3E9Tk8uIDE5QiwgSkFMQU4gS0VOQVJJIDIyLCBCQU5EQVIgUFVDSE9ORyBKQVlBLCAgNDcxMDAgUFVDSE9ORyAgU0VMQU5HT1IiIHRhcmdldD0iX2JsYW5rIiBjbGFzcz0idG9vbHRpcHBlZCIgZGF0YS1wb3NpdGlvbj0iYm90dG9tIiBkYXRhLWRlbGF5PSI1MCIgZGF0YS10b29sdGlwPSJDbGljayB0byBvcGVuIEdvb2dsZSBNYXBzIj5OTy4gMTlCLCBKQUxBTiBLRU5BUkkgMjIsIEJBTkRBUiBQVUNIT05HIEpBWUEsICA0NzEwMCBQVUNIT05HICBTRUxBTkdPUjwvYT48L3A+CTxwPjxpIGNsYXNzPSJmYSBmYS1waG9uZSIgYXJpYS1oaWRkZW49InRydWUiPjwvaT4mbmJzcDs8YSBocmVmPSJ0ZWw6KzYwMTczNjY3MjAwIiBjbGFzcz0idG9vbHRpcHBlZCIgZGF0YS1wb3NpdGlvbj0iYm90dG9tIiBkYXRhLWRlbGF5PSI1MCIgZGF0YS10b29sdGlwPSJDbGljayB0byBjYWxsIHRoaXMgbnVtYmVyIChpZiBhcHBsaWNhYmxlKSI+MDE3MzY2NzIwMDwvYT48L3A+CTxwPjxpIGNsYXNzPSJmYSBmYS1mYXgiIGFyaWEtaGlkZGVuPSJ0cnVlIj48L2k+Jm5ic3A7LTwvYT48L3A+CTxwPjxpIGNsYXNzPSJmYSBmYS1lbnZlbG9wZSIgYXJpYS1oaWRkZW49InRydWUiPjwvaT4mbmJzcDs8YSBocmVmPSJtYWlsdG86bGFpa2ltaGlubkBnbWFpbC5jb20iIGNsYXNzPSJ0b29sdGlwcGVkIiBkYXRhLXBvc2l0aW9uPSJib3R0b20iIGRhdGEtZGVsYXk9IjUwIiBkYXRhLXRvb2x0aXA9IkNsaWNrIHRvIGVtYWlsIHRoaXMgYWRkcmVzcyAoaWYgYXBwbGljYWJsZSkiPmxhaWtpbWhpbm5AZ21haWwuY29tPC9hPjwvcD48L2Rpdj48L2xpPjxsaT48ZGl2IGNsYXNzPSJjYXJkLXBhbmVsIj4gPHN0cm9uZz48aSBjbGFzcz0iZmEgZmEtaWQtY2FyZC1vIiBhcmlhLWhpZGRlbj0idHJ1ZSI+PC9pPiZuYnNwO0UgKDMpIDEwNDY8L3N0cm9uZz4JPHA+PGkgY2xhc3M9ImZhIGZhLWJ1aWxkaW5nLW8iIGFyaWEtaGlkZGVuPSJ0cnVlIj48L2k+Jm5ic3A7QUNFIFJFQUxUWTwvcD4JPHA+PGkgY2xhc3M9ImZhIGZhLW1hcC1tYXJrZXIiIGFyaWEtaGlkZGVuPSJ0cnVlIj48L2k+Jm5ic3A7PGEgaHJlZj0iaHR0cDovL21hcHMuZ29vZ2xlLmNvbS8/cT1VTklUIEYgLSAzIC0gM0EsIE5FTyBEQU1BTlNBUkEsIEpBTEFOIFBKVSA4LzEsIERBTUFOU0FSQSBQRVJEQU5BLCA0NzgyMCBQRVRBTElORyBKQVlBICBTRUxBTkdPUiIgdGFyZ2V0PSJfYmxhbmsiIGNsYXNzPSJ0b29sdGlwcGVkIiBkYXRhLXBvc2l0aW9uPSJib3R0b20iIGRhdGEtZGVsYXk9IjUwIiBkYXRhLXRvb2x0aXA9IkNsaWNrIHRvIG9wZW4gR29vZ2xlIE1hcHMiPlVOSVQgRiAtIDMgLSAzQSwgTkVPIERBTUFOU0FSQSwgSkFMQU4gUEpVIDgvMSwgREFNQU5TQVJBIFBFUkRBTkEsIDQ3ODIwIFBFVEFMSU5HIEpBWUEgIFNFTEFOR09SPC9hPjwvcD4JPHA+PGkgY2xhc3M9ImZhIGZhLXBob25lIiBhcmlhLWhpZGRlbj0idHJ1ZSI+PC9pPiZuYnNwOzxhIGhyZWY9InRlbDorNjAzLTc3MjggMzk3OCIgY2xhc3M9InRvb2x0aXBwZWQiIGRhdGEtcG9zaXRpb249ImJvdHRvbSIgZGF0YS1kZWxheT0iNTAiIGRhdGEtdG9vbHRpcD0iQ2xpY2sgdG8gY2FsbCB0aGlzIG51bWJlciAoaWYgYXBwbGljYWJsZSkiPjAzLTc3MjggMzk3ODwvYT48L3A+CTxwPjxpIGNsYXNzPSJmYSBmYS1mYXgiIGFyaWEtaGlkZGVuPSJ0cnVlIj48L2k+Jm5ic3A7PGEgaHJlZj0iZmF4Ois2MDMtNzcyOCAzNjc4IiBjbGFzcz0idG9vbHRpcHBlZCIgZGF0YS1wb3NpdGlvbj0iYm90dG9tIiBkYXRhLWRlbGF5PSI1MCIgZGF0YS10b29sdGlwPSJDbGljayB0byBmYXggdGhpcyBudW1iZXIgKGlmIGFwcGxpY2FibGUpIj4wMy03NzI4IDM2Nzg8L2E+PC9wPgk8cD48aSBjbGFzcz0iZmEgZmEtZW52ZWxvcGUiIGFyaWEtaGlkZGVuPSJ0cnVlIj48L2k+Jm5ic3A7PGEgaHJlZj0ibWFpbHRvOmFjZV9ycmVhbHR5QHlhaG9vLmNvbSIgY2xhc3M9InRvb2x0aXBwZWQiIGRhdGEtcG9zaXRpb249ImJvdHRvbSIgZGF0YS1kZWxheT0iNTAiIGRhdGEtdG9vbHRpcD0iQ2xpY2sgdG8gZW1haWwgdGhpcyBhZGRyZXNzIChpZiBhcHBsaWNhYmxlKSI+YWNlX3JyZWFsdHlAeWFob28uY29tPC9hPjwvcD48L2Rpdj48L2xpPjxsaT48ZGl2IGNsYXNzPSJjYXJkLXBhbmVsIj4gPHN0cm9uZz48aSBjbGFzcz0iZmEgZmEtaWQtY2FyZC1vIiBhcmlhLWhpZGRlbj0idHJ1ZSI+PC9pPiZuYnNwO0UgKDEpIDE3Nzk8L3N0cm9uZz4JPHA+PGkgY2xhc3M9ImZhIGZhLWJ1aWxkaW5nLW8iIGFyaWEtaGlkZGVuPSJ0cnVlIj48L2k+Jm5ic3A7QUNJVFkgUFJPUEVSVElFUyBTRE4gQkhEPC9wPgk8cD48aSBjbGFzcz0iZmEgZmEtbWFwLW1hcmtlciIgYXJpYS1oaWRkZW49InRydWUiPjwvaT4mbmJzcDs8YSBocmVmPSJodHRwOi8vbWFwcy5nb29nbGUuY29tLz9xPTY1LTIsIEpBTEFOIEJLIDVBLzIsIEJBTkRBUiBLSU5SQVJBICAgNDcxODAgUFVDSE9ORyAgU0VMQU5HT1IiIHRhcmdldD0iX2JsYW5rIiBjbGFzcz0idG9vbHRpcHBlZCIgZGF0YS1wb3NpdGlvbj0iYm90dG9tIiBkYXRhLWRlbGF5PSI1MCIgZGF0YS10b29sdGlwPSJDbGljayB0byBvcGVuIEdvb2dsZSBNYXBzIj42NS0yLCBKQUxBTiBCSyA1QS8yLCBCQU5EQVIgS0lOUkFSQSAgIDQ3MTgwIFBVQ0hPTkcgIFNFTEFOR09SPC9hPjwvcD4JPHA+PGkgY2xhc3M9ImZhIGZhLXBob25lIiBhcmlhLWhpZGRlbj0idHJ1ZSI+PC9pPiZuYnNwOzxhIGhyZWY9InRlbDorNjAzNTg4ODgwOTQiIGNsYXNzPSJ0b29sdGlwcGVkIiBkYXRhLXBvc2l0aW9uPSJib3R0b20iIGRhdGEtZGVsYXk9IjUwIiBkYXRhLXRvb2x0aXA9IkNsaWNrIHRvIGNhbGwgdGhpcyBudW1iZXIgKGlmIGFwcGxpY2FibGUpIj4wMzU4ODg4MDk0PC9hPjwvcD4JPHA+PGkgY2xhc3M9ImZhIGZhLWZheCIgYXJpYS1oaWRkZW49InRydWUiPjwvaT4mbmJzcDstPC9hPjwvcD4JPHA+PGkgY2xhc3M9ImZhIGZhLWVudmVsb3BlIiBhcmlhLWhpZGRlbj0idHJ1ZSI+PC9pPiZuYnNwOzxhIGhyZWY9Im1haWx0bzphY2l0eS5wcm9wLmFkbUBnbWFpbC5jb20iIGNsYXNzPSJ0b29sdGlwcGVkIiBkYXRhLXBvc2l0aW9uPSJib3R0b20iIGRhdGEtZGVsYXk9IjUwIiBkYXRhLXRvb2x0aXA9IkNsaWNrIHRvIGVtYWlsIHRoaXMgYWRkcmVzcyAoaWYgYXBwbGljYWJsZSkiPmFjaXR5LnByb3AuYWRtQGdtYWlsLmNvbTwvYT48L3A+PC9kaXY+PC9saT48bGk+PGRpdiBjbGFzcz0iY2FyZC1wYW5lbCI+IDxzdHJvbmc+PGkgY2xhc3M9ImZhIGZhLWlkLWNhcmQtbyIgYXJpYS1oaWRkZW49InRydWUiPjwvaT4mbmJzcDtFICgzKSAxNjQwPC9zdHJvbmc+CTxwPjxpIGNsYXNzPSJmYSBmYS1idWlsZGluZy1vIiBhcmlhLWhpZGRlbj0idHJ1ZSI+PC9pPiZuYnNwO0FDVElPTiBSRUFMIEVTVEFURTwvcD4JPHA+PGkgY2xhc3M9ImZhIGZhLW1hcC1tYXJrZXIiIGFyaWEtaGlkZGVuPSJ0cnVlIj48L2k+Jm5ic3A7PGEgaHJlZj0iaHR0cDovL21hcHMuZ29vZ2xlLmNvbS8/cT1VTklUIE5PLjExMCwxU1QgRkxPT1IsIE1FTkFSQSBNVVRJQVJBIE1BSkVTVElDLCBKQUxBTiBPVEhNQU4sIDQ2MDAwIFBFVEFMSU5HIEpBWUEsICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgU0VMQU5HT1IiIHRhcmdldD0iX2JsYW5rIiBjbGFzcz0idG9vbHRpcHBlZCIgZGF0YS1wb3NpdGlvbj0iYm90dG9tIiBkYXRhLWRlbGF5PSI1MCIgZGF0YS10b29sdGlwPSJDbGljayB0byBvcGVuIEdvb2dsZSBNYXBzIj5VTklUIE5PLjExMCwxU1QgRkxPT1IsIE1FTkFSQSBNVVRJQVJBIE1BSkVTVElDLCBKQUxBTiBPVEhNQU4sIDQ2MDAwIFBFVEFMSU5HIEpBWUEsICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgU0VMQU5HT1I8L2E+PC9wPgk8cD48aSBjbGFzcz0iZmEgZmEtcGhvbmUiIGFyaWEtaGlkZGVuPSJ0cnVlIj48L2k+Jm5ic3A7PGEgaHJlZj0idGVsOis2MDMgLSA3Nzg1MTg4OCIgY2xhc3M9InRvb2x0aXBwZWQiIGRhdGEtcG9zaXRpb249ImJvdHRvbSIgZGF0YS1kZWxheT0iNTAiIGRhdGEtdG9vbHRpcD0iQ2xpY2sgdG8gY2FsbCB0aGlzIG51bWJlciAoaWYgYXBwbGljYWJsZSkiPjAzIC0gNzc4NTE4ODg8L2E+PC9wPgk8cD48aSBjbGFzcz0iZmEgZmEtZmF4IiBhcmlhLWhpZGRlbj0idHJ1ZSI+PC9pPiZuYnNwOzxhIGhyZWY9ImZheDorNi0iIGNsYXNzPSJ0b29sdGlwcGVkIiBkYXRhLXBvc2l0aW9uPSJib3R0b20iIGRhdGEtZGVsYXk9IjUwIiBkYXRhLXRvb2x0aXA9IkNsaWNrIHRvIGZheCB0aGlzIG51bWJlciAoaWYgYXBwbGljYWJsZSkiPi08L2E+PC9wPgk8cD48aSBjbGFzcz0iZmEgZmEtZW52ZWxvcGUiIGFyaWEtaGlkZGVuPSJ0cnVlIj48L2k+Jm5ic3A7PGEgaHJlZj0ibWFpbHRvOmFjdGlvbi5lMjUyMEBnbWFpbC5jb20iIGNsYXNzPSJ0b29sdGlwcGVkIiBkYXRhLXBvc2l0aW9uPSJib3R0b20iIGRhdGEtZGVsYXk9IjUwIiBkYXRhLXRvb2x0aXA9IkNsaWNrIHRvIGVtYWlsIHRoaXMgYWRkcmVzcyAoaWYgYXBwbGljYWJsZSkiPmFjdGlvbi5lMjUyMEBnbWFpbC5jb208L2E+PC9wPjwvZGl2PjwvbGk+PGxpPjxkaXYgY2xhc3M9ImNhcmQtcGFuZWwiPiA8c3Ryb25nPjxpIGNsYXNzPSJmYSBmYS1pZC1jYXJkLW8iIGFyaWEtaGlkZGVuPSJ0cnVlIj48L2k+Jm5ic3A7ViAoMykgMDA2OTwvc3Ryb25nPgk8cD48aSBjbGFzcz0iZmEgZmEtYnVpbGRpbmctbyIgYXJpYS1oaWRkZW49InRydWUiPjwvaT4mbmJzcDtBQ1RJT04gVkFMVUVSUyAmIFBST1BFUlRZIENPTlNVTFRBTlRTPC9wPgk8cD48aSBjbGFzcz0iZmEgZmEtbWFwLW1hcmtlciIgYXJpYS1oaWRkZW49InRydWUiPjwvaT4mbmJzcDs8YSBocmVmPSJodHRwOi8vbWFwcy5nb29nbGUuY29tLz9xPVVOSVQgTk8uMTEwLDFTVCBGTE9PUiwgTUVOQVJBIE1VVElBUkEgTUFKRVNUSUMsIEpBTEFOIE9USE1BTiwgNDYwMDAgUEVUQUxJTkcgSkFZQSwgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBTRUxBTkdPUiIgdGFyZ2V0PSJfYmxhbmsiIGNsYXNzPSJ0b29sdGlwcGVkIiBkYXRhLXBvc2l0aW9uPSJib3R0b20iIGRhdGEtZGVsYXk9IjUwIiBkYXRhLXRvb2x0aXA9IkNsaWNrIHRvIG9wZW4gR29vZ2xlIE1hcHMiPlVOSVQgTk8uMTEwLDFTVCBGTE9PUiwgTUVOQVJBIE1VVElBUkEgTUFKRVNUSUMsIEpBTEFOIE9USE1BTiwgNDYwMDAgUEVUQUxJTkcgSkFZQSwgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBTRUxBTkdPUjwvYT48L3A+CTxwPjxpIGNsYXNzPSJmYSBmYS1waG9uZSIgYXJpYS1oaWRkZW49InRydWUiPjwvaT4mbmJzcDs8YSBocmVmPSJ0ZWw6KzYwMyAtIDc3ODUxODg4IiBjbGFzcz0idG9vbHRpcHBlZCIgZGF0YS1wb3NpdGlvbj0iYm90dG9tIiBkYXRhLWRlbGF5PSI1MCIgZGF0YS10b29sdGlwPSJDbGljayB0byBjYWxsIHRoaXMgbnVtYmVyIChpZiBhcHBsaWNhYmxlKSI+MDMgLSA3Nzg1MTg4ODwvYT48L3A+CTxwPjxpIGNsYXNzPSJmYSBmYS1mYXgiIGFyaWEtaGlkZGVuPSJ0cnVlIj48L2k+Jm5ic3A7PGEgaHJlZj0iZmF4Ois2LSIgY2xhc3M9InRvb2x0aXBwZWQiIGRhdGEtcG9zaXRpb249ImJvdHRvbSIgZGF0YS1kZWxheT0iNTAiIGRhdGEtdG9vbHRpcD0iQ2xpY2sgdG8gZmF4IHRoaXMgbnVtYmVyIChpZiBhcHBsaWNhYmxlKSI+LTwvYT48L3A+CTxwPjxpIGNsYXNzPSJmYSBmYS1lbnZlbG9wZSIgYXJpYS1oaWRkZW49InRydWUiPjwvaT4mbmJzcDs8YSBocmVmPSJtYWlsdG86YWN0aW9uLnYxMDM5QGdtYWlsLmNvbSIgY2xhc3M9InRvb2x0aXBwZWQiIGRhdGEtcG9zaXRpb249ImJvdHRvbSIgZGF0YS1kZWxheT0iNTAiIGRhdGEtdG9vbHRpcD0iQ2xpY2sgdG8gZW1haWwgdGhpcyBhZGRyZXNzIChpZiBhcHBsaWNhYmxlKSI+YWN0aW9uLnYxMDM5QGdtYWlsLmNvbTwvYT48L3A+PC9kaXY+PC9saT48bGk+PGRpdiBjbGFzcz0iY2FyZC1wYW5lbCI+IDxzdHJvbmc+PGkgY2xhc3M9ImZhIGZhLWlkLWNhcmQtbyIgYXJpYS1oaWRkZW49InRydWUiPjwvaT4mbmJzcDtWUE0gKDMpIDAwNzE8L3N0cm9uZz4JPHA+PGkgY2xhc3M9ImZhIGZhLWJ1aWxkaW5nLW8iIGFyaWEtaGlkZGVuPSJ0cnVlIj48L2k+Jm5ic3A7QUZaIFJFQUxUWSBDT05TVUxUQU5UPC9wPgk8cD48aSBjbGFzcz0iZmEgZmEtbWFwLW1hcmtlciIgYXJpYS1oaWRkZW49InRydWUiPjwvaT4mbmJzcDs8YSBocmVmPSJodHRwOi8vbWFwcy5nb29nbGUuY29tLz9xPTIzLTEsIEpBTEFOIEVRVUlORSAxRSwgICA0MzMwMCBTRVJJIEtFTUJBTkdBTiAgU0VMQU5HT1IiIHRhcmdldD0iX2JsYW5rIiBjbGFzcz0idG9vbHRpcHBlZCIgZGF0YS1wb3NpdGlvbj0iYm90dG9tIiBkYXRhLWRlbGF5PSI1MCIgZGF0YS10b29sdGlwPSJDbGljayB0byBvcGVuIEdvb2dsZSBNYXBzIj4yMy0xLCBKQUxBTiBFUVVJTkUgMUUsICAgNDMzMDAgU0VSSSBLRU1CQU5HQU4gIFNFTEFOR09SPC9hPjwvcD4JPHA+PGkgY2xhc3M9ImZhIGZhLXBob25lIiBhcmlhLWhpZGRlbj0idHJ1ZSI+PC9pPiZuYnNwOzxhIGhyZWY9InRlbDorNjAzODk0MDA1NTEiIGNsYXNzPSJ0b29sdGlwcGVkIiBkYXRhLXBvc2l0aW9uPSJib3R0b20iIGRhdGEtZGVsYXk9IjUwIiBkYXRhLXRvb2x0aXA9IkNsaWNrIHRvIGNhbGwgdGhpcyBudW1iZXIgKGlmIGFwcGxpY2FibGUpIj4wMzg5NDAwNTUxPC9hPjwvcD4JPHA+PGkgY2xhc3M9ImZhIGZhLWZheCIgYXJpYS1oaWRkZW49InRydWUiPjwvaT4mbmJzcDstPC9hPjwvcD4JPHA+PGkgY2xhc3M9ImZhIGZhLWVudmVsb3BlIiBhcmlhLWhpZGRlbj0idHJ1ZSI+PC9pPiZuYnNwOzxhIGhyZWY9Im1haWx0bzphZnpyZWFsdHljb25zdWx0YW50QGdtYWlsLmNvbSIgY2xhc3M9InRvb2x0aXBwZWQiIGRhdGEtcG9zaXRpb249ImJvdHRvbSIgZGF0YS1kZWxheT0iNTAiIGRhdGEtdG9vbHRpcD0iQ2xpY2sgdG8gZW1haWwgdGhpcyBhZGRyZXNzIChpZiBhcHBsaWNhYmxlKSI+YWZ6cmVhbHR5Y29uc3VsdGFudEBnbWFpbC5jb208L2E+PC9wPjwvZGl2PjwvbGk+PGxpPjxkaXYgY2xhc3M9ImNhcmQtcGFuZWwiPiA8c3Ryb25nPjxpIGNsYXNzPSJmYSBmYS1pZC1jYXJkLW8iIGFyaWEtaGlkZGVuPSJ0cnVlIj48L2k+Jm5ic3A7RSAoMSkgMDA5NDwvc3Ryb25nPgk8cD48aSBjbGFzcz0iZmEgZmEtYnVpbGRpbmctbyIgYXJpYS1oaWRkZW49InRydWUiPjwvaT4mbmJzcDtBRlogUkVBTFRZIFNETiBCSEQ8L3A+CTxwPjxpIGNsYXNzPSJmYSBmYS1tYXAtbWFya2VyIiBhcmlhLWhpZGRlbj0idHJ1ZSI+PC9pPiZuYnNwOzxhIGhyZWY9Imh0dHA6Ly9tYXBzLmdvb2dsZS5jb20vP3E9MjMtMSBKQUxBTiBFUVVJTkUgMUUgVEFNQU4gRVFVSU5FICA0MzMwMCBTRVJJIEtFTUJBTkdBTiAgU0VMQU5HT1IiIHRhcmdldD0iX2JsYW5rIiBjbGFzcz0idG9vbHRpcHBlZCIgZGF0YS1wb3NpdGlvbj0iYm90dG9tIiBkYXRhLWRlbGF5PSI1MCIgZGF0YS10b29sdGlwPSJDbGljayB0byBvcGVuIEdvb2dsZSBNYXBzIj4yMy0xIEpBTEFOIEVRVUlORSAxRSBUQU1BTiBFUVVJTkUgIDQzMzAwIFNFUkkgS0VNQkFOR0FOICBTRUxBTkdPUjwvYT48L3A+CTxwPjxpIGNsYXNzPSJmYSBmYS1waG9uZSIgYXJpYS1oaWRkZW49InRydWUiPjwvaT4mbmJzcDs8YSBocmVmPSJ0ZWw6KzYwMzk1NDQ1MTU1IiBjbGFzcz0idG9vbHRpcHBlZCIgZGF0YS1wb3NpdGlvbj0iYm90dG9tIiBkYXRhLWRlbGF5PSI1MCIgZGF0YS10b29sdGlwPSJDbGljayB0byBjYWxsIHRoaXMgbnVtYmVyIChpZiBhcHBsaWNhYmxlKSI+MDM5NTQ0NTE1NTwvYT48L3A+CTxwPjxpIGNsYXNzPSJmYSBmYS1mYXgiIGFyaWEtaGlkZGVuPSJ0cnVlIj48L2k+Jm5ic3A7LTwvYT48L3A+CTxwPjxpIGNsYXNzPSJmYSBmYS1lbnZlbG9wZSIgYXJpYS1oaWRkZW49InRydWUiPjwvaT4mbmJzcDs8YSBocmVmPSJtYWlsdG86YWZ6cmVhbHR5QGdtYWlsLmNvbSIgY2xhc3M9InRvb2x0aXBwZWQiIGRhdGEtcG9zaXRpb249ImJvdHRvbSIgZGF0YS1kZWxheT0iNTAiIGRhdGEtdG9vbHRpcD0iQ2xpY2sgdG8gZW1haWwgdGhpcyBhZGRyZXNzIChpZiBhcHBsaWNhYmxlKSI+YWZ6cmVhbHR5QGdtYWlsLmNvbTwvYT48L3A+PC9kaXY+PC9saT48bGk+PGRpdiBjbGFzcz0iY2FyZC1wYW5lbCI+IDxzdHJvbmc+PGkgY2xhc3M9ImZhIGZhLWlkLWNhcmQtbyIgYXJpYS1oaWRkZW49InRydWUiPjwvaT4mbmJzcDtFICgxKSAwMDk0LzI8L3N0cm9uZz4JPHA+PGkgY2xhc3M9ImZhIGZhLWJ1aWxkaW5nLW8iIGFyaWEtaGlkZGVuPSJ0cnVlIj48L2k+Jm5ic3A7QUZaIFJFQUxUWSBTRE4gQkhEPC9wPgk8cD48aSBjbGFzcz0iZmEgZmEtbWFwLW1hcmtlciIgYXJpYS1oaWRkZW49InRydWUiPjwvaT4mbmJzcDs8YSBocmVmPSJodHRwOi8vbWFwcy5nb29nbGUuY29tLz9xPTUxLUIsIEpBTEFOIFNVQVJBU0EgOC8zIEJBTkRBUiBUVU4gSFVTU0VJTiBPTk4gIDQzMjAwIENIRVJBUyAgU0VMQU5HT1IiIHRhcmdldD0iX2JsYW5rIiBjbGFzcz0idG9vbHRpcHBlZCIgZGF0YS1wb3NpdGlvbj0iYm90dG9tIiBkYXRhLWRlbGF5PSI1MCIgZGF0YS10b29sdGlwPSJDbGljayB0byBvcGVuIEdvb2dsZSBNYXBzIj41MS1CLCBKQUxBTiBTVUFSQVNBIDgvMyBCQU5EQVIgVFVOIEhVU1NFSU4gT05OICA0MzIwMCBDSEVSQVMgIFNFTEFOR09SPC9hPjwvcD4JPHA+PGkgY2xhc3M9ImZhIGZhLXBob25lIiBhcmlhLWhpZGRlbj0idHJ1ZSI+PC9pPiZuYnNwOzxhIGhyZWY9InRlbDorNjAxMS0xMTE0OTQ2OCIgY2xhc3M9InRvb2x0aXBwZWQiIGRhdGEtcG9zaXRpb249ImJvdHRvbSIgZGF0YS1kZWxheT0iNTAiIGRhdGEtdG9vbHRpcD0iQ2xpY2sgdG8gY2FsbCB0aGlzIG51bWJlciAoaWYgYXBwbGljYWJsZSkiPjAxMS0xMTE0OTQ2ODwvYT48L3A+CTxwPjxpIGNsYXNzPSJmYSBmYS1mYXgiIGFyaWEtaGlkZGVuPSJ0cnVlIj48L2k+Jm5ic3A7LTwvYT48L3A+CTxwPjxpIGNsYXNzPSJmYSBmYS1lbnZlbG9wZSIgYXJpYS1oaWRkZW49InRydWUiPjwvaT4mbmJzcDs8YSBocmVmPSJtYWlsdG86a2xhZnpyZWFsdHlAZ21haWwuY29tIiBjbGFzcz0idG9vbHRpcHBlZCIgZGF0YS1wb3NpdGlvbj0iYm90dG9tIiBkYXRhLWRlbGF5PSI1MCIgZGF0YS10b29sdGlwPSJDbGljayB0byBlbWFpbCB0aGlzIGFkZHJlc3MgKGlmIGFwcGxpY2FibGUpIj5rbGFmenJlYWx0eUBnbWFpbC5jb208L2E+PC9wPjwvZGl2PjwvbGk+PGxpPjxkaXYgY2xhc3M9ImNhcmQtcGFuZWwiPiA8c3Ryb25nPjxpIGNsYXNzPSJmYSBmYS1pZC1jYXJkLW8iIGFyaWEtaGlkZGVuPSJ0cnVlIj48L2k+Jm5ic3A7RSAoMykgMTMwMzwvc3Ryb25nPgk8cD48aSBjbGFzcz0iZmEgZmEtYnVpbGRpbmctbyIgYXJpYS1oaWRkZW49InRydWUiPjwvaT4mbmJzcDtBR0VOIFBFUlVNQUhBTiBKT0U8L3A+CTxwPjxpIGNsYXNzPSJmYSBmYS1tYXAtbWFya2VyIiBhcmlhLWhpZGRlbj0idHJ1ZSI+PC9pPiZuYnNwOzxhIGhyZWY9Imh0dHA6Ly9tYXBzLmdvb2dsZS5jb20vP3E9TE9UIDEtMDIyLCBMRVZFTCAxIE1JTExFTk5JVU0gU1FVQVJFIDk4LCBKQUxBTiAxNC8xLCA0NjEwMCBQRVRBTElORyBKQVlBICBTRUxBTkdPUiIgdGFyZ2V0PSJfYmxhbmsiIGNsYXNzPSJ0b29sdGlwcGVkIiBkYXRhLXBvc2l0aW9uPSJib3R0b20iIGRhdGEtZGVsYXk9IjUwIiBkYXRhLXRvb2x0aXA9IkNsaWNrIHRvIG9wZW4gR29vZ2xlIE1hcHMiPkxPVCAxLTAyMiwgTEVWRUwgMSBNSUxMRU5OSVVNIFNRVUFSRSA5OCwgSkFMQU4gMTQvMSwgNDYxMDAgUEVUQUxJTkcgSkFZQSAgU0VMQU5HT1I8L2E+PC9wPgk8cD48aSBjbGFzcz0iZmEgZmEtcGhvbmUiIGFyaWEtaGlkZGVuPSJ0cnVlIj48L2k+Jm5ic3A7PGEgaHJlZj0idGVsOis2MDMtNzk2OTEzMDAiIGNsYXNzPSJ0b29sdGlwcGVkIiBkYXRhLXBvc2l0aW9uPSJib3R0b20iIGRhdGEtZGVsYXk9IjUwIiBkYXRhLXRvb2x0aXA9IkNsaWNrIHRvIGNhbGwgdGhpcyBudW1iZXIgKGlmIGFwcGxpY2FibGUpIj4wMy03OTY5MTMwMDwvYT48L3A+CTxwPjxpIGNsYXNzPSJmYSBmYS1mYXgiIGFyaWEtaGlkZGVuPSJ0cnVlIj48L2k+Jm5ic3A7PGEgaHJlZj0iZmF4Ois2MDMtMjI4MzIyNDIiIGNsYXNzPSJ0b29sdGlwcGVkIiBkYXRhLXBvc2l0aW9uPSJib3R0b20iIGRhdGEtZGVsYXk9IjUwIiBkYXRhLXRvb2x0aXA9IkNsaWNrIHRvIGZheCB0aGlzIG51bWJlciAoaWYgYXBwbGljYWJsZSkiPjAzLTIyODMyMjQyPC9hPjwvcD4JPHA+PGkgY2xhc3M9ImZhIGZhLWVudmVsb3BlIiBhcmlhLWhpZGRlbj0idHJ1ZSI+PC9pPiZuYnNwOzxhIGhyZWY9Im1haWx0bzpqaW1teXBlaDFAZ21haWwuY29tIiBjbGFzcz0idG9vbHRpcHBlZCIgZGF0YS1wb3NpdGlvbj0iYm90dG9tIiBkYXRhLWRlbGF5PSI1MCIgZGF0YS10b29sdGlwPSJDbGljayB0byBlbWFpbCB0aGlzIGFkZHJlc3MgKGlmIGFwcGxpY2FibGUpIj5qaW1teXBlaDFAZ21haWwuY29tPC9hPjwvcD48L2Rpdj48L2xpPjwvdWw+ZAIFDw8WAh4HVmlzaWJsZWdkFgQCAQ9kFgQCAQ8WAh4FY2xhc3MFCGRpc2FibGVkZAIDDxYCHwsFDHdhdmVzLWVmZmVjdGQCAw8WAh8JBQxQYWdlIDEgb2YgNTBkAgsPZBYCAgEPZBYCZg9kFgQCCQ88KwAOAgAUKwACDxYIHhxFbmFibGVFbWJlZGRlZEJhc2VTdHlsZXNoZWV0Zx4XRW5hYmxlQWpheFNraW5SZW5kZXJpbmdoHhJSZXNvbHZlZFJlbmRlck1vZGULKXJUZWxlcmlrLldlYi5VSS5SZW5kZXJNb2RlLCBUZWxlcmlrLldlYi5VSSwgVmVyc2lvbj0yMDIwLjIuNjE3LjQ1LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTEyMWZhZTc4MTY1YmEzZDQBHhVFbmFibGVFbWJlZGRlZFNjcmlwdHNnZBcCBQ9TZWxlY3RlZEluZGV4ZXMWAAULRWRpdEluZGV4ZXMWAAEWAhYLDwIDFCsAA2Q8KwAFAQQFCEZpcm1OYW1lPCsABQEEBQlOZWdvQ291bnRkZRQrAAALKXlUZWxlcmlrLldlYi5VSS5HcmlkQ2hpbGRMb2FkTW9kZSwgVGVsZXJpay5XZWIuVUksIFZlcnNpb249MjAyMC4yLjYxNy40NSwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xMjFmYWU3ODE2NWJhM2Q0ATwrAAcACyl0VGVsZXJpay5XZWIuVUkuR3JpZEVkaXRNb2RlLCBUZWxlcmlrLldlYi5VSSwgVmVyc2lvbj0yMDIwLjIuNjE3LjQ1LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTEyMWZhZTc4MTY1YmEzZDQBFgIeBF9lZnMWAh4EX2VjY2RkFgQeCkRhdGFNZW1iZXJlHgRfaGxtCysFAWRmZAILDzwrAA4CABQrAAIPFggfDGcfDWgfDgsrBAEfD2dkFwIFD1NlbGVjdGVkSW5kZXhlcxYABQtFZGl0SW5kZXhlcxYAARYCFgsPAgMUKwADZDwrAAUBBAUKTWVtYmVyTmFtZTwrAAUBBAUJTmVnb0NvdW50ZGUUKwAACysFATwrAAcACysGARYCHxAWAh8RZGQWBB8SZR8TCysFAWRmZBgBBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAgUmY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRndl9GaXJtMUxpc3QFJ2N0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkZ3ZfTWVtYmVyTGlzdEVYXRZkBerU0y0h016uYHIktUeLGH/GmohxQHkPQ8VR" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=GOiFvHAEhGWJfM0gcppVNXmUKJzTAW137IibBcIfCo_kX4JeNvwWva4hXhHmywjWNcqIJ-gwSi9NFeEZJerFTOOk-1Hf9dQDDSW21lodDEQ1&amp;t=637814941746327080" type="text/javascript"></script>
+
+
+<script src="/ScriptResource.axd?d=c8fgA-jpl7MEEa9MfVI4x5iZYfzjAC6883DHowQGeujwgEY8F_7Fi9gwzth69vJFCVvRgGLXjVOhi1Veia2cFPWeoMz6OkBRHjqhjj8x-zotT_Fx3rTsPwrJ8sjoTdNb0&amp;t=ffffffffec54f2d7" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=AKD0QINOgipxDs_rx2DINtCH-V-0-mFJ3u6kCVaaXDSiOMgYyeX9rkrYUJgrBNdrlwWBGCxLXvpCFO7W9mnOSeGDMVcR2csWuOcvBndThy8DuQNMrRuza4Y85kNACiAf6_kbblaUhFz1QcQky2NMpg2&amp;t=ffffffffec54f2d7" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=oRweZFl7ZUT9W2QzwyUlSC0r5G6-_IKtDxbITpDygxMaY4ej9ddY6eofV7hP8lHmefofIpMAV_XoA-acbNOWNT-5sCxEPpb17x_5RU51TFG7e9n4tbnl2HvMLZ67w74JTQE_VYchSXC0EXsg9eyHZA2&amp;t=3322f07f" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=wafmoymX4VPg9iYFfeOVeEaoyh55aQaKlXjMgQwROwcSt28pM-_J7_IvJ4OauxtQ88TSSVMcoAtGTc7s8x7Yde0EIUNxIQd-UmZ6ZRCPLWIuAK6ec8z_2U5IKEmGvnDGb4V4eMy6XHbrEaim4b4_xnrCqSjPk1pk_bCeGeBXmdah-DBJXZb604Hdb2qL2azP0&amp;t=3322f07f" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=ouGbjPvcyaWRB6kZt1-fRrPm-MPx8ZjVT4djrFkWpRQUPMumbu8bSR5k4zSFDRodwinzSjz53x5EOw0eZPVo66iMlew2LgzJd3A_7lhjVeIKA-kX5xlcy9sW4WW_o8VrvMbafXU5PP5FC_BKBFrSYQ2&amp;t=3322f07f" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=cWN-aUOJkaB0XbO6FlzFugrEcNMX0b9N_Vm4jGYe9_sFV9nrxyVCKqztOtrFL52SFfpZCkzblw8fuwKSmj7oRLvstlW3NDv0DTSENhFkr9iTEwAk7OQax8pGWDqkaCKacDzo0pwTMBtpV3L_tXV6bA2&amp;t=3322f07f" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=cbmx16WnaVIPAbRCYzmPqvMaaTHTHi9R-DgWXlvn7nfVHfYFTxZ3dx6vTN5mIxJ_El5Dsa-wqkU5UsQNBfWYRcQCdSV9u94WexrmWYQvItHeB4DU9XsGyDQvxdNbPFSyeTDqjK7liK52m3rACBvilw2&amp;t=3322f07f" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=Zw1sfSnD7yBsXhvqrtHIOT-LM7KsFL6rFjU6svWWOHZDECWu4Ht8AkLvCPrMSYwuGyXGlXL4kbFllseThNOiLxpbCvTo8JTrEr4QnQYY5BPFuqWA7rd25aTxfanokWnU1evKgK9A2s0mBRsY_OdfuR2jwlHm4ulzrksEj0wbjxs1&amp;t=3322f07f" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=BPBweWjKFYPq-y2MXxRceyglFC82UprlhMW8fteFsN-WFTc2DTwxWGx_TGM8S7g76aqsrNflbvHkVRVusCshUP_ko6WbZEe6MGGM-x8prYtCuhTLpsbhWxI_F_2Xu6Ei0&amp;t=ffffffffec54f2d7" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=62LLoaGEPhh9i-atagVvrHpMl8G4abhB-Q7p8c0Sq9OLALzMQQB42aS4oFJiPS0mL8LCPDRgnRE9CfLnBcY72KEtVSnz8qFe-bR4R8dKeiJETjb1ry-i5FKROrAQh_nUGtNLw0fn9etWKd6GAoMktQ2&amp;t=ffffffffec54f2d7" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=1dRGsvtYCI55M6PCNWnZ8Ew4Jt8QZUdN9rduCEwvXLaKu8O2Z69siQmzdbE0l12lpxG7ZDsLsHZm-voVhQ4n0ht4Fb-Vs1pokOokQcMqD2c0KzO3IyhcO441oOKDvflEw1pqbB5YV1fglSYyBtSjEvhDjZVX8BACOfx0SUdzvZQ1&amp;t=ffffffffec54f2d7" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=eaMWQn-l7eg3DrsoQvpfljV-ywPJ7C_Y9Ry1vwv8J17gcjaPf5rdbSGPvJlTvnQSTy1sn-XuuRDFzXMcvvym53MjmnZ8iKOpNRvsrzTNdzdbPZkHZCCMJRx-HapKAAO-n6LQVlgndzRLwvhcIQa9Bg2&amp;t=ffffffffec54f2d7" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=1GZW2gvqDDKqdYM7c94Sz0l9-on5Seia-2dFlHUzfc4YmTWDbwU0RSX71vtBOrl07hyqHkUd1_xIYiYorSlIDl0Cg-8FV8G5--wPoHTZZm2RUQR2De9UJZifF7nH3H-pca-3V8gdUjNWAjCsFTAdiQ2&amp;t=ffffffffec54f2d7" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=BndlyxMZxJoGqFA8heCXOTzO8_o4yNduTBmw-6CjqgeSq3ToI7IOkgGGysrynHWFHutKF4A_FmIEiBi21u2uZnnjFrFNofzGdbIXAkTPwYC-_rzgnfQrxPHJkUnDumXFpgq2VkZTIf-DVZWGY8CS4g2&amp;t=ffffffffec54f2d7" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=q1M3tXXWTUE3GSpEggVXNhndNk4FPPT1lA6sIVzGU56yCeBH4hlUSdNdI4FTq6G6wXdZ2-huYv_6ue108IZI73v_jwxZbXfxZwRNx3wxALPCuTKpVHmrhKAWz6Y0hLhb4W-bspFL369i8Qjj0r0t3lO8RgcjEQLys79TJ3YANhg1&amp;t=ffffffffec54f2d7" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=b9LELemukxqs140cosE0vgPGYrMfu5geS7_iKHzandoghSsIWmCKe5SCMRVk21YuTbhNdyH8W7FFtiQVUxl-gZEgYKpaNtyfVQcYNxuh5mcq928QKcp7wQDUW0phe4BasQtvHIWJ0OqdLOynjqCs4g2&amp;t=ffffffffec54f2d7" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=bE6BTayOe0FouLrJzFLbx46mbX_msJTPctZHpWzHfzjewc2NexJpCLv70EVyX-cROQCDqiToi7bdobXg4-0vbXR4QkuMve_Z0-tn21uyhNDyUPvnIZN7KJzSJy3OkYt7zS1U_REWVonheBXdfnDUSA2&amp;t=ffffffffec54f2d7" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="656833E6" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAB5u6oqr9KMtH2vnLaMSxPTGTAB6IvnRsKjH/GIXkhJr230CjxlRlNH7aBuvsXQkT7eSlgEDS1Ec0Q5lEufrLzlmuhw3shugRLi/ezWMq/WOoW0ClP6J+KFBorrL6/IXBDaWc8jYeDPY8ZpB3+OoKMf2+RtfKPzAPx/CEPY7aSM2zVBzsyTU6xQXF2T6PNZdIRF4l20nDuzNoRHyV8B5Mlje7D+9DltTDOYsBc1Q0X2uUVcMtZ3McJC8PnxprqdN5ygcIl8jto5kwsGMr2BycnVwqvO1xt7gAlhiU2N/gF2JoNGYsl2HuTlzRWRUsWv+KO37hjtxtxE+Yk22OrUNR4QNbfvv2S257MRn4S6Mi259N2DCTycLq1FYOyIUUbcMFSq8Nx9UwBhEU3vEODmkiwkTA86wciyny2wAZTqLAoW/y3iFA5zaQUiPDKZgH918zLbkClnCsIZV5lhw33exYiUyhElfphJDy/goVK+ihHKjkfwfiBU/9KG2ThsVrnU2W144yW0vJ9y+28I0qtYHuDfp9zrfZjA+YXRkodF0jwflLuit0CYKwHl8eNbkCTC1cj/DrjspnIgwL9mJrcHy5rWZMNYfCDUq7F3nIOqflPFkC2qupyqT0sgWFVZsb7X7Eg2bhzDEV2mHHy3zYi8ZCoLYTeo7DXRmgzJiqc8dMJ4mKQ==" />
+</div>
+                
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ContentPlaceHolder1$ToolkitScriptManager1', 'form1', ['tctl00$ContentPlaceHolder1$UpdatePanel1','ContentPlaceHolder1_UpdatePanel1','tctl00$ContentPlaceHolder1$UpdatePanelPopupMemberList','ContentPlaceHolder1_UpdatePanelPopupMemberList'], [], [], 360000, 'ctl00');
+//]]>
+</script>
+
+    <div id="ContentPlaceHolder1_UpdatePanel1">
+	
+            <div class="row">
+                <div id="ContentPlaceHolder1_pnlSearch">
+		
+                    <div class="col s12 m4 l4" id="divSearch">
+                        <ul id="search_div" class="collapsible popout" data-collapsible="accordion">
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">business</i>Search for Firm</div>
+                                <div class="collapsible-body">
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <input name="ctl00$ContentPlaceHolder1$txt_FirmRegNo" type="text" id="ContentPlaceHolder1_txt_FirmRegNo" placeholder="eg: E (1) 1234" class="validate" data-length="18" />
+                                            <label for="txt_FirmRegNo" id="label1">Registration Number</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <input name="ctl00$ContentPlaceHolder1$txt_FirmName" type="text" id="ContentPlaceHolder1_txt_FirmName" placeholder="eg: A &amp; B PROPERTIES" class="validate" />
+                                            <label for="txt_FirmName" id="label2">Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <textarea name="ctl00$ContentPlaceHolder1$txt_FirmCombineAdd" id="ContentPlaceHolder1_txt_FirmCombineAdd" placeholder="eg: Petaling Jaya" class="materialize-textarea"></textarea>
+                                            <label for="txt_FirmCombineAdd" id="label3">Address</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <select name="ctl00$ContentPlaceHolder1$ddl_FirmType" id="ContentPlaceHolder1_ddl_FirmType">
+			<option selected="selected" value="">Select all</option>
+			<option value="Appraisal And Estate Agency">Appraisal And Estate Agency</option>
+			<option value="Appraiser">Appraiser</option>
+			<option value="Estate Agency And Property Management">Estate Agency And Property Management</option>
+			<option value="Estate Agent">Estate Agent</option>
+			<option value="Non Firm">Non Firm</option>
+			<option value="Property Management">Property Management</option>
+			<option value="Valuer">Valuer</option>
+			<option value="Valuer And Estate Agency">Valuer And Estate Agency</option>
+			<option value="Valuer, Estate Agency And Property Management">Valuer, Estate Agency And Property Management</option>
+			<option value="Valuer And Property Manager">Valuer And Property Manager</option>
+		</select>
+                                            <label>Type</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <select name="ctl00$ContentPlaceHolder1$ddl_StateDesc" id="ContentPlaceHolder1_ddl_StateDesc">
+			<option value="">Select all</option>
+			<option value="JOHOR">JOHOR</option>
+			<option value="KEDAH">KEDAH</option>
+			<option value="KELANTAN">KELANTAN</option>
+			<option value="LABUAN">LABUAN</option>
+			<option value="MELAKA">MELAKA</option>
+			<option value="NEGERI SEMBILAN">NEGERI SEMBILAN</option>
+			<option value="PAHANG">PAHANG</option>
+			<option value="PERAK">PERAK</option>
+			<option value="PERLIS">PERLIS</option>
+			<option value="PULAU PINANG">PULAU PINANG</option>
+			<option value="SABAH">SABAH</option>
+			<option value="SARAWAK">SARAWAK</option>
+			<option selected="selected" value="SELANGOR">SELANGOR</option>
+			<option value="TERENGGANU">TERENGGANU</option>
+			<option value="WILAYAH PERSEKUTUAN KUALA LUMPUR">WILAYAH PERSEKUTUAN KUALA LUMPUR</option>
+			<option value="WILAYAH PERSEKUTUAN PUTRAJAYA">WILAYAH PERSEKUTUAN PUTRAJAYA</option>
+		</select>
+                                            <label>State</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col s12 m12 l6 center">
+                                            <a id="ContentPlaceHolder1_btn_ClearFirm" class="waves-effect waves-teal btn-flat" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$btn_ClearFirm&#39;,&#39;&#39;)">Clear</a>
+                                        </div>
+                                        <div class="col s12 m12 l6 center">
+                                            <button onclick="__doPostBack('ctl00$ContentPlaceHolder1$btnSubmitFirm','')" id="ContentPlaceHolder1_btnSubmitFirm" class="btn waves-effect waves-light blue darken-2" type="submit">Search</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">supervisor_account</i>Search for Member</div>
+                                <div class="collapsible-body">
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <input name="ctl00$ContentPlaceHolder1$txt_MemberRegNo" type="text" id="ContentPlaceHolder1_txt_MemberRegNo" placeholder="eg: E 1234" class="validate" data-length="7" />
+                                            <label for="txt_MemberRegNo" id="label4">Registration Number</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <input name="ctl00$ContentPlaceHolder1$txt_MemberName" type="text" id="ContentPlaceHolder1_txt_MemberName" placeholder="eg: Ahmad" class="validate" />
+                                            <label for="txt_MemberName" id="label5">Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <select name="ctl00$ContentPlaceHolder1$ddl_LicenseType" id="ContentPlaceHolder1_ddl_LicenseType">
+			<option selected="selected" value="">Select all</option>
+			<option value="E">Estate Agent</option>
+			<option value="PEA">Probationary Estate Agent</option>
+			<option value="PV">Probationary Valuer</option>
+			<option value="V">Valuer</option>
+		</select>
+                                            <label>Type</label>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row" style="margin-bottom: 10px;">
+                                        <div class="col s12 center">
+                                            <a id="ContentPlaceHolder1_btnShowFirmList" class="waves-effect waves-teal btn-flat" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$btnShowFirmList&#39;,&#39;&#39;)"><i class="material-icons right">filter_list</i>Filter by Firm</a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col s12 m12 l6 center">
+                                            <a id="ContentPlaceHolder1_btn_ClearMember" class="waves-effect waves-teal btn-flat" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$btn_ClearMember&#39;,&#39;&#39;)">Clear</a>
+                                        </div>
+                                        <div class="col s12 m12 l6 center">
+                                            <button onclick="__doPostBack('ctl00$ContentPlaceHolder1$btnSubmitMember','')" id="ContentPlaceHolder1_btnSubmitMember" class="btn waves-effect waves-light blue darken-2" type="submit">Search</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">perm_identity</i>Search for Negotiator</div>
+                                <div class="collapsible-body">
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <input name="ctl00$ContentPlaceHolder1$txt_NegotiatorREN" type="text" id="ContentPlaceHolder1_txt_NegotiatorREN" placeholder="eg: REN 12345" class="validate" data-length="9" />
+                                            <label for="txt_NegotiatorREN" id="label6">REN</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <input name="ctl00$ContentPlaceHolder1$txt_NegotiatorName" type="text" id="ContentPlaceHolder1_txt_NegotiatorName" placeholder="eg: Ahmad" class="validate" />
+                                            <label for="txt_NegotiatorName" id="label7">Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <input name="ctl00$ContentPlaceHolder1$txt_NRIC_No" type="text" id="ContentPlaceHolder1_txt_NRIC_No" placeholder="eg: 92100311XXXX" class="validate" data-length="12" />
+                                            <label for="txt_NRIC_No" id="label8" data-error="Value / format is incorrect">IC Number</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <input name="ctl00$ContentPlaceHolder1$txt_PassportNo" type="text" id="ContentPlaceHolder1_txt_PassportNo" placeholder="eg: A1234567" class="validate" />
+                                            <label for="txt_PassportNo" id="label9">Passport Number</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <input name="ctl00$ContentPlaceHolder1$txt_NegotiatorMobile" type="text" id="ContentPlaceHolder1_txt_NegotiatorMobile" placeholder="eg: 013XXXXXXX" class="validate" data-length="11" />
+                                            <label for="txt_NegotiatorMobile" id="label10" data-error="Value / format is incorrect">Mobile Number</label>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row" style="margin-bottom: 10px;">
+                                        <div class="col s12 center">
+                                            <a id="ContentPlaceHolder1_btnShowMemberList" class="waves-effect waves-teal btn-flat" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$btnShowMemberList&#39;,&#39;&#39;)"><i class="material-icons right">filter_list</i>Filter by Firm</a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col s12 m12 l6 center">
+                                            <a id="ContentPlaceHolder1_btn_ClearNego" class="waves-effect waves-teal btn-flat" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$btn_ClearNego&#39;,&#39;&#39;)">Clear</a>
+                                        </div>
+                                        <div class="col s12 m12 l6 center">
+                                            <button onclick="__doPostBack('ctl00$ContentPlaceHolder1$btnSubmitNegotiator','')" id="ContentPlaceHolder1_btnSubmitNegotiator" class="btn waves-effect waves-light blue darken-2" type="submit">Search</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                
+	</div>
+                <div class="col s12 m8 l8">
+                    <div id="ContentPlaceHolder1_divResult"><div class="card-panel blue darken-2"> <span class="white-text">Listing of active firms in LPPEH. <i>(495 results)</i></span> </div><ul id="ulResult"><li><blockquote>SELANGOR</blockquote><div class="card-panel"> <strong><i class="fa fa-id-card-o" aria-hidden="true"></i>&nbsp;AE (3) 0006</strong>	<p><i class="fa fa-building-o" aria-hidden="true"></i>&nbsp;3L ENTERPRISES</p>	<p><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;<a href="http://maps.google.com/?q=NO. 66A, JALAN SS 21/39, DAMANSARA UTAMA, 47400 PETALING JAYA  SELANGOR" target="_blank" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click to open Google Maps">NO. 66A, JALAN SS 21/39, DAMANSARA UTAMA, 47400 PETALING JAYA  SELANGOR</a></p>	<p><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;<a href="tel:+603-77289233" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click to call this number (if applicable)">03-77289233</a></p>	<p><i class="fa fa-fax" aria-hidden="true"></i>&nbsp;-</a></p>	<p><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;<a href="mailto:the_3l@yahoo.com" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click to email this address (if applicable)">the_3l@yahoo.com</a></p></div></li><li><div class="card-panel"> <strong><i class="fa fa-id-card-o" aria-hidden="true"></i>&nbsp;E (3) 2087</strong>	<p><i class="fa fa-building-o" aria-hidden="true"></i>&nbsp;5A REALTY</p>	<p><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;<a href="http://maps.google.com/?q=NO. 19B, JALAN KENARI 22, BANDAR PUCHONG JAYA,  47100 PUCHONG  SELANGOR" target="_blank" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click to open Google Maps">NO. 19B, JALAN KENARI 22, BANDAR PUCHONG JAYA,  47100 PUCHONG  SELANGOR</a></p>	<p><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;<a href="tel:+60173667200" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click to call this number (if applicable)">0173667200</a></p>	<p><i class="fa fa-fax" aria-hidden="true"></i>&nbsp;-</a></p>	<p><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;<a href="mailto:laikimhinn@gmail.com" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click to email this address (if applicable)">laikimhinn@gmail.com</a></p></div></li><li><div class="card-panel"> <strong><i class="fa fa-id-card-o" aria-hidden="true"></i>&nbsp;E (3) 1046</strong>	<p><i class="fa fa-building-o" aria-hidden="true"></i>&nbsp;ACE REALTY</p>	<p><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;<a href="http://maps.google.com/?q=UNIT F - 3 - 3A, NEO DAMANSARA, JALAN PJU 8/1, DAMANSARA PERDANA, 47820 PETALING JAYA  SELANGOR" target="_blank" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click to open Google Maps">UNIT F - 3 - 3A, NEO DAMANSARA, JALAN PJU 8/1, DAMANSARA PERDANA, 47820 PETALING JAYA  SELANGOR</a></p>	<p><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;<a href="tel:+603-7728 3978" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click to call this number (if applicable)">03-7728 3978</a></p>	<p><i class="fa fa-fax" aria-hidden="true"></i>&nbsp;<a href="fax:+603-7728 3678" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click to fax this number (if applicable)">03-7728 3678</a></p>	<p><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;<a href="mailto:ace_rrealty@yahoo.com" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click to email this address (if applicable)">ace_rrealty@yahoo.com</a></p></div></li><li><div class="card-panel"> <strong><i class="fa fa-id-card-o" aria-hidden="true"></i>&nbsp;E (1) 1779</strong>	<p><i class="fa fa-building-o" aria-hidden="true"></i>&nbsp;ACITY PROPERTIES SDN BHD</p>	<p><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;<a href="http://maps.google.com/?q=65-2, JALAN BK 5A/2, BANDAR KINRARA   47180 PUCHONG  SELANGOR" target="_blank" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click to open Google Maps">65-2, JALAN BK 5A/2, BANDAR KINRARA   47180 PUCHONG  SELANGOR</a></p>	<p><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;<a href="tel:+60358888094" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click to call this number (if applicable)">0358888094</a></p>	<p><i class="fa fa-fax" aria-hidden="true"></i>&nbsp;-</a></p>	<p><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;<a href="mailto:acity.prop.adm@gmail.com" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click to email this address (if applicable)">acity.prop.adm@gmail.com</a></p></div></li><li><div class="card-panel"> <strong><i class="fa fa-id-card-o" aria-hidden="true"></i>&nbsp;E (3) 1640</strong>	<p><i class="fa fa-building-o" aria-hidden="true"></i>&nbsp;ACTION REAL ESTATE</p>	<p><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;<a href="http://maps.google.com/?q=UNIT NO.110,1ST FLOOR, MENARA MUTIARA MAJESTIC, JALAN OTHMAN, 46000 PETALING JAYA,                                                                                                                                          SELANGOR" target="_blank" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click to open Google Maps">UNIT NO.110,1ST FLOOR, MENARA MUTIARA MAJESTIC, JALAN OTHMAN, 46000 PETALING JAYA,                                                                                                                                          SELANGOR</a></p>	<p><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;<a href="tel:+603 - 77851888" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click to call this number (if applicable)">03 - 77851888</a></p>	<p><i class="fa fa-fax" aria-hidden="true"></i>&nbsp;<a href="fax:+6-" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click to fax this number (if applicable)">-</a></p>	<p><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;<a href="mailto:action.e2520@gmail.com" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click to email this address (if applicable)">action.e2520@gmail.com</a></p></div></li><li><div class="card-panel"> <strong><i class="fa fa-id-card-o" aria-hidden="true"></i>&nbsp;V (3) 0069</strong>	<p><i class="fa fa-building-o" aria-hidden="true"></i>&nbsp;ACTION VALUERS & PROPERTY CONSULTANTS</p>	<p><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;<a href="http://maps.google.com/?q=UNIT NO.110,1ST FLOOR, MENARA MUTIARA MAJESTIC, JALAN OTHMAN, 46000 PETALING JAYA,                                                                                                                                          SELANGOR" target="_blank" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click to open Google Maps">UNIT NO.110,1ST FLOOR, MENARA MUTIARA MAJESTIC, JALAN OTHMAN, 46000 PETALING JAYA,                                                                                                                                          SELANGOR</a></p>	<p><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;<a href="tel:+603 - 77851888" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click to call this number (if applicable)">03 - 77851888</a></p>	<p><i class="fa fa-fax" aria-hidden="true"></i>&nbsp;<a href="fax:+6-" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click to fax this number (if applicable)">-</a></p>	<p><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;<a href="mailto:action.v1039@gmail.com" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click to email this address (if applicable)">action.v1039@gmail.com</a></p></div></li><li><div class="card-panel"> <strong><i class="fa fa-id-card-o" aria-hidden="true"></i>&nbsp;VPM (3) 0071</strong>	<p><i class="fa fa-building-o" aria-hidden="true"></i>&nbsp;AFZ REALTY CONSULTANT</p>	<p><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;<a href="http://maps.google.com/?q=23-1, JALAN EQUINE 1E,   43300 SERI KEMBANGAN  SELANGOR" target="_blank" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click to open Google Maps">23-1, JALAN EQUINE 1E,   43300 SERI KEMBANGAN  SELANGOR</a></p>	<p><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;<a href="tel:+60389400551" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click to call this number (if applicable)">0389400551</a></p>	<p><i class="fa fa-fax" aria-hidden="true"></i>&nbsp;-</a></p>	<p><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;<a href="mailto:afzrealtyconsultant@gmail.com" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click to email this address (if applicable)">afzrealtyconsultant@gmail.com</a></p></div></li><li><div class="card-panel"> <strong><i class="fa fa-id-card-o" aria-hidden="true"></i>&nbsp;E (1) 0094</strong>	<p><i class="fa fa-building-o" aria-hidden="true"></i>&nbsp;AFZ REALTY SDN BHD</p>	<p><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;<a href="http://maps.google.com/?q=23-1 JALAN EQUINE 1E TAMAN EQUINE  43300 SERI KEMBANGAN  SELANGOR" target="_blank" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click to open Google Maps">23-1 JALAN EQUINE 1E TAMAN EQUINE  43300 SERI KEMBANGAN  SELANGOR</a></p>	<p><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;<a href="tel:+60395445155" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click to call this number (if applicable)">0395445155</a></p>	<p><i class="fa fa-fax" aria-hidden="true"></i>&nbsp;-</a></p>	<p><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;<a href="mailto:afzrealty@gmail.com" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click to email this address (if applicable)">afzrealty@gmail.com</a></p></div></li><li><div class="card-panel"> <strong><i class="fa fa-id-card-o" aria-hidden="true"></i>&nbsp;E (1) 0094/2</strong>	<p><i class="fa fa-building-o" aria-hidden="true"></i>&nbsp;AFZ REALTY SDN BHD</p>	<p><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;<a href="http://maps.google.com/?q=51-B, JALAN SUARASA 8/3 BANDAR TUN HUSSEIN ONN  43200 CHERAS  SELANGOR" target="_blank" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click to open Google Maps">51-B, JALAN SUARASA 8/3 BANDAR TUN HUSSEIN ONN  43200 CHERAS  SELANGOR</a></p>	<p><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;<a href="tel:+6011-11149468" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click to call this number (if applicable)">011-11149468</a></p>	<p><i class="fa fa-fax" aria-hidden="true"></i>&nbsp;-</a></p>	<p><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;<a href="mailto:klafzrealty@gmail.com" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click to email this address (if applicable)">klafzrealty@gmail.com</a></p></div></li><li><div class="card-panel"> <strong><i class="fa fa-id-card-o" aria-hidden="true"></i>&nbsp;E (3) 1303</strong>	<p><i class="fa fa-building-o" aria-hidden="true"></i>&nbsp;AGEN PERUMAHAN JOE</p>	<p><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;<a href="http://maps.google.com/?q=LOT 1-022, LEVEL 1 MILLENNIUM SQUARE 98, JALAN 14/1, 46100 PETALING JAYA  SELANGOR" target="_blank" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click to open Google Maps">LOT 1-022, LEVEL 1 MILLENNIUM SQUARE 98, JALAN 14/1, 46100 PETALING JAYA  SELANGOR</a></p>	<p><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;<a href="tel:+603-79691300" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click to call this number (if applicable)">03-79691300</a></p>	<p><i class="fa fa-fax" aria-hidden="true"></i>&nbsp;<a href="fax:+603-22832242" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click to fax this number (if applicable)">03-22832242</a></p>	<p><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;<a href="mailto:jimmypeh1@gmail.com" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Click to email this address (if applicable)">jimmypeh1@gmail.com</a></p></div></li></ul></div>
+                    <div id="ContentPlaceHolder1_PanelPagination">
+		
+                        <div class="row">
+                            <div class="col s8">
+                                <div id="ContentPlaceHolder1_divPagination">
+                                    <ul class="pagination">
+                                        <li id="ContentPlaceHolder1_liPrev" class="disabled"><a id="ContentPlaceHolder1_aPrev" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$aPrev&#39;,&#39;&#39;)"><i class="material-icons">chevron_left</i></a></li>
+                                        <li id="ContentPlaceHolder1_liNext" class="waves-effect"><a id="ContentPlaceHolder1_aNext" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$aNext&#39;,&#39;&#39;)"><i class="material-icons">chevron_right</i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col s4">
+                                <p id="ContentPlaceHolder1_lbl_PageNo" class="right">Page 1 of 50</p>
+                            </div>
+                        </div>
+                    
+	</div>
+                </div>
+            </div>
+            
+            <input type="submit" name="ctl00$ContentPlaceHolder1$hiddenTargetControlForModalPopupMemberList" value="" id="ContentPlaceHolder1_hiddenTargetControlForModalPopupMemberList" style="display: none" />
+            <div id="ContentPlaceHolder1_PanelModelPopupMemberList" class="card-panel" style="width:100%;display: none; border-radius: 3px; height: auto; overflow: hidden; max-width: 600px;">
+		
+                <div id="ContentPlaceHolder1_UpdatePanelPopupMemberList">
+			
+                        <div class="modal-header" style="padding: 0px;">
+                            <div class="row">
+                                <div class="col s8" style="padding-top: 5px;">
+                                    <strong>Firm / Estate Agent List</strong>
+                                </div>
+                                <div class="col s4">
+                                    <a id="ContentPlaceHolder1_btnCloseModalMember" class="waves-effect waves-teal btn-flat right" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$btnCloseModalMember&#39;,&#39;&#39;)"><i class="material-icons">close</i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row" style="display: flex; align-items: baseline;">
+                                <div class="input-field col s8">
+                                    <input name="ctl00$ContentPlaceHolder1$txt_modalFirm1Name" type="text" id="ContentPlaceHolder1_txt_modalFirm1Name" placeholder="eg: A &amp; B PROPERTIES" class="validate" style="margin: 0;" />
+                                    <label for="txt_modalFirm1Name" id="label14">Firm Name</label>
+                                </div>
+                                <div class="col s4">
+                                    <a id="ContentPlaceHolder1_btn_modalFirm1Search" class="waves-effect waves-teal btn-flat" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$btn_modalFirm1Search&#39;,&#39;&#39;)">Search</a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s12">
+                                    <blockquote id="ContentPlaceHolder1_tut_FirmMember">Search firm to proceed.</blockquote>
+                                    <div id="ctl00_ContentPlaceHolder1_gv_Firm1List" class="RadGrid RadGrid_Windows7" style="height:250px;">
+
+			<!-- 2020.2.617.45 --><input id="ctl00_ContentPlaceHolder1_gv_Firm1List_ClientState" name="ctl00_ContentPlaceHolder1_gv_Firm1List_ClientState" type="hidden" />	</div>
+			
+                                    <div id="ctl00_ContentPlaceHolder1_gv_MemberList" class="RadGrid RadGrid_Windows7" style="height:250px;">
+
+			<input id="ctl00_ContentPlaceHolder1_gv_MemberList_ClientState" name="ctl00_ContentPlaceHolder1_gv_MemberList_ClientState" type="hidden" />	</div>
+			
+                                    
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s3">
+                                    <div id="ContentPlaceHolder1_UpdateProgress2" style="display:none;">
+				
+                                            <div class="preloader-wrapper small active" style="margin-top: 5px;">
+                                                <div class="spinner-layer spinner-blue">
+                                                    <div class="circle-clipper left">
+                                                        <div class="circle"></div>
+                                                    </div>
+                                                    <div class="gap-patch">
+                                                        <div class="circle"></div>
+                                                    </div>
+                                                    <div class="circle-clipper right">
+                                                        <div class="circle"></div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="spinner-layer spinner-red">
+                                                    <div class="circle-clipper left">
+                                                        <div class="circle"></div>
+                                                    </div>
+                                                    <div class="gap-patch">
+                                                        <div class="circle"></div>
+                                                    </div>
+                                                    <div class="circle-clipper right">
+                                                        <div class="circle"></div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="spinner-layer spinner-yellow">
+                                                    <div class="circle-clipper left">
+                                                        <div class="circle"></div>
+                                                    </div>
+                                                    <div class="gap-patch">
+                                                        <div class="circle"></div>
+                                                    </div>
+                                                    <div class="circle-clipper right">
+                                                        <div class="circle"></div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="spinner-layer spinner-green">
+                                                    <div class="circle-clipper left">
+                                                        <div class="circle"></div>
+                                                    </div>
+                                                    <div class="gap-patch">
+                                                        <div class="circle"></div>
+                                                    </div>
+                                                    <div class="circle-clipper right">
+                                                        <div class="circle"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        
+			</div>
+                                </div>
+                                <div class="col s9">
+                                    <div style="margin-top: 5px;">
+                                        <input type="submit" name="ctl00$ContentPlaceHolder1$btnSelectFirmMember" value="Confirm" id="ContentPlaceHolder1_btnSelectFirmMember" disabled="disabled" class="aspNetDisabled btn waves-effect waves-light blue darken-2 right" />
+                                        <a id="ContentPlaceHolder1_btn_modalShowAllFirm1" class="waves-effect waves-teal btn-flat right" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$btn_modalShowAllFirm1&#39;,&#39;&#39;)">Reset</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+		</div>
+            
+	</div>
+            <div id="ContentPlaceHolder1_UpdateProgress1" style="display:none;">
+		
+                    <div style="position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; z-index: 8; background-color: rgba(0, 0, 0, 0.5);"></div>
+                    <div style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 9;">
+                        <div class="preloader-wrapper big active">
+                            <div class="spinner-layer spinner-blue">
+                                <div class="circle-clipper left">
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="gap-patch">
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="circle-clipper right">
+                                    <div class="circle"></div>
+                                </div>
+                            </div>
+
+                            <div class="spinner-layer spinner-red">
+                                <div class="circle-clipper left">
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="gap-patch">
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="circle-clipper right">
+                                    <div class="circle"></div>
+                                </div>
+                            </div>
+
+                            <div class="spinner-layer spinner-yellow">
+                                <div class="circle-clipper left">
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="gap-patch">
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="circle-clipper right">
+                                    <div class="circle"></div>
+                                </div>
+                            </div>
+
+                            <div class="spinner-layer spinner-green">
+                                <div class="circle-clipper left">
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="gap-patch">
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="circle-clipper right">
+                                    <div class="circle"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+	</div>
+        
+</div>
+
+            
+<script type='text/javascript'>$("html, body").animate({ scrollTop: 0 }, 500);</script><script type='text/javascript'>Materialize.showStaggeredList('#ulResult');</script>
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.ModalPopupBehavior, {"BackgroundCssClass":"modalBackground","PopupControlID":"ContentPlaceHolder1_PanelModelPopupMemberList","dynamicServicePath":"/LPPEH_Search.aspx","id":"ModalPopupBehaviorMemberList"}, null, null, $get("ContentPlaceHolder1_hiddenTargetControlForModalPopupMemberList"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadGrid, {"ClientID":"ctl00_ContentPlaceHolder1_gv_Firm1List","ClientSettings":{"AllowAutoScrollOnDragDrop":true,"EnableRowHoverStyle":true,"EnablePostBackOnRowClick":true,"ShouldCreateRows":true,"DataBinding":{},"Selecting":{"CellSelectionMode":0,"AllowRowSelect":true,"EnableDragToSelectRows":true},"Scrolling":{"AllowScroll":true,"SaveScrollPosition":true,"ScrollHeight":"300px","UseStaticHeaders":true},"Resizing":{},"ClientMessages":{},"KeyboardNavigationSettings":{"AllowActiveRowCycle":false,"EnableKeyboardShortcuts":true,"FocusKey":89,"InitInsertKey":73,"RebindKey":82,"ExitEditInsertModeKey":27,"UpdateInsertItemKey":13,"DeleteActiveRow":127,"ExpandDetailTableKey":39,"CollapseDetailTableKey":37,"MoveDownKey":40,"MoveUpKey":38,"SaveChangesKey":85,"CancelChangesKey":81},"Animation":{},"Virtualization":{}},"Skin":"Windows7","SortingSettings":{"SortToolTip":"Click here to sort","SortedAscToolTip":"Sorted asc","SortedDescToolTip":"Sorted desc","SortedBackColor":{"R":0,"G":0,"B":0,"A":0,"IsKnownColor":false,"IsEmpty":true,"IsNamedColor":false,"IsSystemColor":false,"Name":"0"},"EnableSkinSortStyles":true,"ViewState":{}},"UniqueID":"ctl00$ContentPlaceHolder1$gv_Firm1List","_activeRowIndex":"","_controlToFocus":"","_currentPageIndex":0,"_defaultDateTimeFormat":"M/d/yyyy h:mm:ss tt","_editIndexes":"[]","_embeddedSkin":true,"_freezeText":"Freeze","_gridTableViewsData":"[{\"ClientID\":\"\",\"UniqueID\":null,\"PageSize\":10,\"PageCount\":1,\"EditMode\":\"EditForms\",\"AllowPaging\":true,\"CurrentPageIndex\":0,\"VirtualItemCount\":0,\"AllowMultiColumnSorting\":true,\"AllowNaturalSort\":true,\"AllowFilteringByColumn\":false,\"PageButtonCount\":10,\"HasDetailTables\":false,\"HasMultiHeaders\":false,\"CheckListWebServicePath\":\"\",\"GroupLoadMode\":\"Server\",\"PagerAlwaysVisible\":true,\"sliderClientID\":\"\",\"sliderLabelClientID\":\"\",\"IsItemInserted\":false,\"clientDataKeyNames\":[],\"hasDetailItemTemplate\":false,\"_dataBindTemplates\":false,\"_selectedItemStyle\":\"\",\"_selectedItemStyleClass\":\"rgSelectedRow\",\"_columnsData\":[{\"UniqueName\":\"ExpandColumn\",\"Resizable\":false,\"Reorderable\":false,\"Selectable\":false,\"Groupable\":false,\"ColumnType\":\"GridExpandColumn\",\"ColumnGroupName\":\"\",\"Editable\":false,\"DataTypeName\":\"System.String\",\"Display\":true},{\"UniqueName\":\"TemplateColumn\",\"Resizable\":true,\"Reorderable\":true,\"Selectable\":true,\"Groupable\":true,\"ColumnType\":\"GridTemplateColumn\",\"ColumnGroupName\":\"\",\"Editable\":false,\"DataTypeName\":\"System.String\",\"DataField\":\"\",\"Display\":true},{\"UniqueName\":\"FirmName\",\"Resizable\":true,\"Reorderable\":true,\"Selectable\":true,\"Groupable\":true,\"ColumnType\":\"GridTemplateColumn\",\"ColumnGroupName\":\"\",\"Editable\":false,\"SortExpression\":\"FirmName\",\"DataTypeName\":\"System.String\",\"DataField\":\"\",\"Display\":true},{\"UniqueName\":\"NegoCount\",\"Resizable\":true,\"Reorderable\":true,\"Selectable\":true,\"Groupable\":true,\"ColumnType\":\"GridTemplateColumn\",\"ColumnGroupName\":\"\",\"Editable\":false,\"SortExpression\":\"NegoCount\",\"DataTypeName\":\"System.String\",\"DataField\":\"\",\"Display\":true}]}]","_loadingText":"Loading...","_masterClientID":"","_readyText":"Ready","_shouldFocusOnPage":false,"_statusLabelID":"","_unfreezeText":"Unfreeze","allowMultiRowSelection":false,"clientStateFieldID":"ctl00_ContentPlaceHolder1_gv_Firm1List_ClientState","renderMode":1}, null, null, $get("ctl00_ContentPlaceHolder1_gv_Firm1List"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadGrid, {"ClientID":"ctl00_ContentPlaceHolder1_gv_MemberList","ClientSettings":{"AllowAutoScrollOnDragDrop":true,"EnableRowHoverStyle":true,"EnablePostBackOnRowClick":true,"ShouldCreateRows":true,"DataBinding":{},"Selecting":{"CellSelectionMode":0,"AllowRowSelect":true,"EnableDragToSelectRows":true},"Scrolling":{"AllowScroll":true,"SaveScrollPosition":true,"ScrollHeight":"300px","UseStaticHeaders":true},"Resizing":{},"ClientMessages":{},"KeyboardNavigationSettings":{"AllowActiveRowCycle":false,"EnableKeyboardShortcuts":true,"FocusKey":89,"InitInsertKey":73,"RebindKey":82,"ExitEditInsertModeKey":27,"UpdateInsertItemKey":13,"DeleteActiveRow":127,"ExpandDetailTableKey":39,"CollapseDetailTableKey":37,"MoveDownKey":40,"MoveUpKey":38,"SaveChangesKey":85,"CancelChangesKey":81},"Animation":{},"Virtualization":{}},"Skin":"Windows7","SortingSettings":{"SortToolTip":"Click here to sort","SortedAscToolTip":"Sorted asc","SortedDescToolTip":"Sorted desc","SortedBackColor":{"R":0,"G":0,"B":0,"A":0,"IsKnownColor":false,"IsEmpty":true,"IsNamedColor":false,"IsSystemColor":false,"Name":"0"},"EnableSkinSortStyles":true,"ViewState":{}},"UniqueID":"ctl00$ContentPlaceHolder1$gv_MemberList","_activeRowIndex":"","_controlToFocus":"","_currentPageIndex":0,"_defaultDateTimeFormat":"M/d/yyyy h:mm:ss tt","_editIndexes":"[]","_embeddedSkin":true,"_freezeText":"Freeze","_gridTableViewsData":"[{\"ClientID\":\"\",\"UniqueID\":null,\"PageSize\":10,\"PageCount\":1,\"EditMode\":\"EditForms\",\"AllowPaging\":true,\"CurrentPageIndex\":0,\"VirtualItemCount\":0,\"AllowMultiColumnSorting\":true,\"AllowNaturalSort\":true,\"AllowFilteringByColumn\":false,\"PageButtonCount\":10,\"HasDetailTables\":false,\"HasMultiHeaders\":false,\"CheckListWebServicePath\":\"\",\"GroupLoadMode\":\"Server\",\"PagerAlwaysVisible\":true,\"sliderClientID\":\"\",\"sliderLabelClientID\":\"\",\"IsItemInserted\":false,\"clientDataKeyNames\":[],\"hasDetailItemTemplate\":false,\"_dataBindTemplates\":false,\"_selectedItemStyle\":\"\",\"_selectedItemStyleClass\":\"rgSelectedRow\",\"_columnsData\":[{\"UniqueName\":\"ExpandColumn\",\"Resizable\":false,\"Reorderable\":false,\"Selectable\":false,\"Groupable\":false,\"ColumnType\":\"GridExpandColumn\",\"ColumnGroupName\":\"\",\"Editable\":false,\"DataTypeName\":\"System.String\",\"Display\":true},{\"UniqueName\":\"TemplateColumn\",\"Resizable\":true,\"Reorderable\":true,\"Selectable\":true,\"Groupable\":true,\"ColumnType\":\"GridTemplateColumn\",\"ColumnGroupName\":\"\",\"Editable\":false,\"DataTypeName\":\"System.String\",\"DataField\":\"\",\"Display\":true},{\"UniqueName\":\"MemberName\",\"Resizable\":true,\"Reorderable\":true,\"Selectable\":true,\"Groupable\":true,\"ColumnType\":\"GridTemplateColumn\",\"ColumnGroupName\":\"\",\"Editable\":false,\"SortExpression\":\"MemberName\",\"DataTypeName\":\"System.String\",\"DataField\":\"\",\"Display\":true},{\"UniqueName\":\"NegoCount\",\"Resizable\":true,\"Reorderable\":true,\"Selectable\":true,\"Groupable\":true,\"ColumnType\":\"GridTemplateColumn\",\"ColumnGroupName\":\"\",\"Editable\":false,\"SortExpression\":\"NegoCount\",\"DataTypeName\":\"System.String\",\"DataField\":\"\",\"Display\":true}]}]","_loadingText":"Loading...","_masterClientID":"","_readyText":"Ready","_shouldFocusOnPage":false,"_statusLabelID":"","_unfreezeText":"Unfreeze","allowMultiRowSelection":false,"clientStateFieldID":"ctl00_ContentPlaceHolder1_gv_MemberList_ClientState","renderMode":1}, null, null, $get("ctl00_ContentPlaceHolder1_gv_MemberList"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.UI._UpdateProgress, {"associatedUpdatePanelId":"ContentPlaceHolder1_UpdatePanelPopupMemberList","displayAfter":500,"dynamicLayout":true}, null, null, $get("ContentPlaceHolder1_UpdateProgress2"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.UI._UpdateProgress, {"associatedUpdatePanelId":null,"displayAfter":500,"dynamicLayout":true}, null, null, $get("ContentPlaceHolder1_UpdateProgress1"));
+});
+//]]>
+</script>
+</form>
+        </div>
+    </main>
+    <footer class="page-footer">
+        <div class="container"></div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2020 Copyright Lembaga Penilai, Pentaksir, Ejen Harta Tanah dan Pengurus Harta (LPPEH). All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="/Content/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="/Content/js/materialize.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            ReBind();
+
+            //$('.collapsible').collapsible('open', 0);
+        });
+
+        var prm = Sys.WebForms.PageRequestManager.getInstance();
+
+        prm.add_endRequest(function () {
+            ReBind();
+
+            jQuery('#label1').addClass('active');
+            jQuery('#label2').addClass('active');
+            jQuery('#label3').addClass('active');
+            jQuery('#label4').addClass('active');
+            jQuery('#label5').addClass('active');
+            jQuery('#label6').addClass('active');
+            jQuery('#label7').addClass('active');
+            jQuery('#label8').addClass('active');
+            jQuery('#label9').addClass('active');
+            jQuery('#label10').addClass('active');
+            jQuery('#label11').addClass('active');
+            jQuery('#label12').addClass('active');
+            jQuery('#label13').addClass('active');
+            jQuery('#label14').addClass('active');
+        });
+
+        function ReBind() {
+            $('.collapsible').collapsible();
+            $('select').material_select();
+            $('input#txt_FirmRegNo, input#txt_MemberRegNo, input#txt_NegotiatorREN, input#txt_NRIC_No, input#txt_NegotiatorMobile').characterCounter();
+            $('.modal').modal();
+            $('.tooltipped').tooltip({ delay: 50 });
+        }
+
+        $(document).keypress(
+            function (event) {
+                if (event.which == '13') {
+                    Materialize.toast('Enter key is disabled. Please use provided buttons to proceed.', 4000);
+                    event.preventDefault();
+                }
+            });
+    </script>
+</body>
+</html>

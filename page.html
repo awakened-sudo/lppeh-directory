@@ -1,0 +1,484 @@
+
+
+<!DOCTYPE html>
+
+<html>
+<head><title>
+	LPPEH Search
+</title>
+    <!--Import Google Icon Font-->
+    <link href="/Content/iconfont/material-icons.css" rel="stylesheet" />
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="/Content/css/materialize.min.css" media="screen,projection" /><link type="text/css" rel="stylesheet" href="/Content/css/Master.css" /><link type="text/css" rel="stylesheet" href="/Content/css/font-awesome.min.css" />
+
+    <!--Initialize favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" /><link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" /><link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" /><link rel="manifest" href="/favicons/manifest.json" /><link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5" /><link rel="shortcut icon" href="/favicons/favicon.ico" /><meta name="msapplication-config" content="/favicons/browserconfig.xml" /><meta name="theme-color" content="#ffffff" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link href="/WebResource.axd?d=hk86lBi5EbSkt88ZqAvwuH-Yph2HeEEvVEEJTnWgB1YmofTbc-FkTWmhccV8yIQVR25T0YTf6BP0ZN3EtSaVuOXStaU1QzpnubwsHOTz-jo-QWsvXtvoQN6OuOYDn2oycxV13zjkjtGy1SotYGELDw2&amp;t=637278647340000000" type="text/css" rel="stylesheet" class="Telerik_stylesheet" /><link href="/WebResource.axd?d=eQGlh3jmwhIboJ4weA0F7w2CzFwru-mXMWhsAMAcuLdFPchpq4E1DWwbBT7xcgXA3oC58TTLqVTQNI0pM81CGFyFWC9T8MItcb81sl77yI4ET6aNe5gg6FN04mHzfBVyYLjKLA3zbiTpE3uiWuHp6ZdSmlZdACpmG4mfbspyez81&amp;t=637278647340000000" type="text/css" rel="stylesheet" class="Telerik_stylesheet" /></head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="http://lppeh.gov.my" class="brand-logo" style="text-decoration: none;">
+                    <img src="http://lppeh.gov.my/WP2016/wp-content/uploads/2018/01/LPPEH_LOGO_NEW.png" style="max-height: 50px; margin: 5px; display: inline-block; vertical-align: middle;" />Search - Lembaga Penilai, Pentaksir, Ejen Harta Tanah dan Pengurus Harta</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="http://lppeh.gov.my/">Home</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <form method="post" action="./" id="form1">
+<input type="hidden" name="ContentPlaceHolder1_ToolkitScriptManager1_HiddenField" id="ContentPlaceHolder1_ToolkitScriptManager1_HiddenField" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE0ODE5MjU1NjgPFg4eCGlzTWVtYmVyaB4FUmVnTm9lHgRTa2lwZh4JUGFnZUNvdW50Zh4LQ3VycmVudFBhZ2UCAR4KU2VhcmNoVHlwZQIBHglGaWx0ZXJGb3JlFgJmD2QWAgIDD2QWAgIBD2QWAgIDD2QWAmYPZBYCAgsPZBYCAgEPZBYCZg9kFgQCCQ88KwAOAgAUKwACDxYIHhxFbmFibGVFbWJlZGRlZEJhc2VTdHlsZXNoZWV0Zx4XRW5hYmxlQWpheFNraW5SZW5kZXJpbmdoHhJSZXNvbHZlZFJlbmRlck1vZGULKXJUZWxlcmlrLldlYi5VSS5SZW5kZXJNb2RlLCBUZWxlcmlrLldlYi5VSSwgVmVyc2lvbj0yMDIwLjIuNjE3LjQ1LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTEyMWZhZTc4MTY1YmEzZDQBHhVFbmFibGVFbWJlZGRlZFNjcmlwdHNnZBcCBQ9TZWxlY3RlZEluZGV4ZXMWAAULRWRpdEluZGV4ZXMWAAEWAhYLDwIDFCsAA2Q8KwAFAQQFCEZpcm1OYW1lPCsABQEEBQlOZWdvQ291bnRkZRQrAAALKXlUZWxlcmlrLldlYi5VSS5HcmlkQ2hpbGRMb2FkTW9kZSwgVGVsZXJpay5XZWIuVUksIFZlcnNpb249MjAyMC4yLjYxNy40NSwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj0xMjFmYWU3ODE2NWJhM2Q0ATwrAAcACyl0VGVsZXJpay5XZWIuVUkuR3JpZEVkaXRNb2RlLCBUZWxlcmlrLldlYi5VSSwgVmVyc2lvbj0yMDIwLjIuNjE3LjQ1LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTEyMWZhZTc4MTY1YmEzZDQBFgIeBF9lZnMWAh4EX2VjY2RkZGRmZAILDzwrAA4CABQrAAIPFggfB2cfCGgfCQsrBAEfCmdkFwIFD1NlbGVjdGVkSW5kZXhlcxYABQtFZGl0SW5kZXhlcxYAARYCFgsPAgMUKwADZDwrAAUBBAUKTWVtYmVyTmFtZTwrAAUBBAUJTmVnb0NvdW50ZGUUKwAACysFATwrAAcACysGARYCHwsWAh8MZGRkZGZkGAEFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYCBSZjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGd2X0Zpcm0xTGlzdAUnY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRndl9NZW1iZXJMaXN0/JegXXxkL2JhhVr5/QqiR1DFQ0yOvcP+IHPDlcwQrlM=" />
+
+
+<script src="/ScriptResource.axd?d=c8fgA-jpl7MEEa9MfVI4x5iZYfzjAC6883DHowQGeujwgEY8F_7Fi9gwzth69vJFCVvRgGLXjVOhi1Veia2cFPWeoMz6OkBRHjqhjj8x-zotT_Fx3rTsPwrJ8sjoTdNb0&amp;t=ffffffffec54f2d7" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=4ugdYng_m33ORwpw-FA1tCdmZX41yHan1hskABYxfEr_JNYMz789lBK0sXT_pwWRxYJM-BNSOVY69RUjeF32AY32smDnlY5R6EMjVPCil3axrulMd0Oyf4FG4Fs3636AMDsktNEQhC-6mNkZ5M_d8Q2&amp;t=3322f07f" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=GpDwDwX_VmKypeEA1U_6zPFmOYf4iymaDF5Dwc0JCkClzbIs6WYvTEG0GZ-7hQ4ZT3Vda65wW0UDmKudQkdQ6gsPpQPf6nMcTIksAYuPOg2IEQd2g8LlJxbzBkMbCwncg6BIcPKv0d5Sp8ep7V33D-cPFtK1HeFUFHQezqxCooIodWWUSNbzzGJL3GMCUu4A0&amp;t=3322f07f" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=ESrH6ZJK9op0rt0WLVbyXMybE5-tsO_RhnKONZ4kQs_J8amOan4kAghbZonbyulXTgzNtD8BMq5py4GtisP5J3Vi34ZJhmpefBXQ7ZUOEkDebOXeL2Lw-rvR4OYFi9O8PwJ7eAZ8xN3cfXFoemaT2w2&amp;t=3322f07f" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=H6NP_NeeiUemBYS32rLz3kq_ZDyC9XuFW0UOi9YRNR6Lhm1NE15W0gDMC6-d-5JXtcg5QSjigkMKsYDSP402Wk-ryEjS3sj1X34GyuXp6rt9u3kfneFPZ-8neYqMHRj0RGnzjZssNQUPqFi1m6OUEw2&amp;t=3322f07f" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=YMTdyX9Jbp2CVFTo0fukfs5ArzonIggP3QnlMFjAUNxRP1UtEBwBNxSoM5C9J5mXXAm_yCCDmSP1HVWYq0c5-jGRajsuXl2pgOnFtFAInJxycPEqKd60W292mVCsQELkzW8lX1FiqbunNOZS5ZhObg2&amp;t=3322f07f" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=J8y0cY0yZQSufzfnIrZ641fZVBfnEzbem5TFTuzCazI4f274PNx3-W25t1czdAp69WvfK6eQ2pMldYGgZvhVtHi1GwJ2a3w6YDYlz8pcveinHerE-zyTEIIyQ9N30ENL1j_SgMnFHC9307fosI0nG39JsvZos2tKvzZTw2Ptlt41&amp;t=3322f07f" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=pxpIZwizdxmGnGLEWOoveLQi0yXI3LVy9tCuLkEF5y1lK2x5Tcy7nSCI85rEI620BzsevjeeCIKvFXpK3Kmrk-hKzlaZy7X9A2m8XVI4XRi_RqOx_0-LH8xHnRSJnWA-0&amp;t=ffffffffec54f2d7" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=pv2aeJAZmyMSsUKBKO5Zh8vzt2GpWCK6MVZz1hNzvEXBKmwSUr8soZjJCp0f-sP8EH3mgZF1oMONDQ6SXXmWe5ub36GRrQ6hTMzJOnmj3CqfAgwG5ALrCw68SCKepYzgEN8lHK15gyfUTCFBG-RmxA2&amp;t=ffffffffec54f2d7" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=yQkqqag-uEPIr2SpS9d0n5QRfZsYOPF9phD81P_qQ6ODhe-uOVNaimxaR-0FZkMqwiyqAvfosEBMCqRNET2T5K2OwO0mVRpddbm2uxAhDb4brLSm02C89Ykb8HCYzLgkS6OlmD4CXEdnkdfL7qqAaZ8t14lvYEizCcIV-j5ZKM41&amp;t=ffffffffec54f2d7" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=kvgBwEvnVOJSvjCTYRmEhFM_GadOEtAHc7PYpZz4r8_4FfLmVk_i2gyVsaSbl962Z9W9SRHFTyN-8rRW5oDjqauoPwBjMezflqhBJXss4eqCYDWp-0uTUoN78egZ7W8gOT-kUscX7BBzbQX1MqWLmw2&amp;t=ffffffffec54f2d7" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=Fv7xA_a6iGVFkeQKlGzq_6X0wi3p6A7Vi-Vwwn6Kh1Wqv3h1JYulWxokgfYT1sB04ObU22zd6jR2yfRICM9xVnjsG_LSNrAKpKyr98mnmx1h7_6-LvNWFKrB_aNV-9xcMWjZ77bcLPJs_D8mfbHzKA2&amp;t=ffffffffec54f2d7" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=mLzohx77vUOJ6K6ZOmU2euJdwWHzQvUdPYIvhZssrT0-i5xe5GcHdlEzXqq4m745kqf3CD_V43fvEWZfxWYSKtgYXN1aSm7ItotxQH1Rom9jHI3KlnE8DG3Pk1TScEf7NuaT8U-gvbKnLEVD5IReTg2&amp;t=ffffffffec54f2d7" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=wKreY4oqylrivrkuci8izPUXrgCz3JhzyxjlRL62i4PUDc4RmK-0GeOvOQfJPoDlITpzmj0FpRS-qDk5NWAHuXOArkT-i9ZYi6W2-HrZwB-hcAjtVTU6wybPgmunLcX-7yrjyHS62kF4wT4qCUCHqUimjDvFWxElq_Ze7FRbhsc1&amp;t=ffffffffec54f2d7" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=DN_24qSe9v_UeDuo3RzDoU2YDMvNe1Ok6kD8kSJKGKYKbqTPWhEW9c__BruuYYErTOl4dntKEXRiAk1rk4N5YLUKuuWgYnoo4hGQSnuOptqnGRZr3WadwSWjU2Gjgw6BVjPAZ942JKsnltKXzeJ2nA2&amp;t=ffffffffec54f2d7" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=M_TTZFp0pqXWxWB_bqXxX-leR-HAfX6XJvuAiGBAuAE2FkLdCVm5UIBFzUVUC3FsBPQ89GAO9R3eJsC961FvqUvuqDBuogcZl0ex0-tCuKXELpmmol7D4lb9wNKRCxYrDC6q7pyxXBnYO9VPHc6gmw2&amp;t=ffffffffec54f2d7" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="656833E6" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdABwUk2WNVWx6jKWwtyMLRv9ATAB6IvnRsKjH/GIXkhJr230CjxlRlNH7aBuvsXQkT7eSlgEDS1Ec0Q5lEufrLzlmuhw3shugRLi/ezWMq/WOoW0ClP6J+KFBorrL6/IXBDaWc8jYeDPY8ZpB3+OoKMf2+RtfKPzAPx/CEPY7aSM2zVBzsyTU6xQXF2T6PNZdIRF4l20nDuzNoRHyV8B5Mlje7D+9DltTDOYsBc1Q0X2uUVcMtZ3McJC8PnxprqdN5ygcIl8jto5kwsGMr2BycnVwqvO1xt7gAlhiU2N/gF2JoNGYsl2HuTlzRWRUsWv+KO37hjtxtxE+Yk22OrUNR4QNbfvv2S257MRn4S6Mi259N2DCTycLq1FYOyIUUbcMFSq8Nx9UwBhEU3vEODmkiwkTA86wciyny2wAZTqLAoW/y3iFA5zaQUiPDKZgH918zLbkClnCsIZV5lhw33exYiUyOMltLyfcvtvCNKrWB7g36fc632YwPmF0ZKHRdI8H5S7ordAmCsB5fHjW5AkwtXI/w647KZyIMC/Zia3B8ua1mTDWHwg1Kuxd5yDqn5TxZAtqrqcqk9LIFhVWbG+1+xINbXgw8FcHpE2U9ars/YULBz4OWYMZBdGy8T0NdjWyUkI=" />
+                
+    
+    <div id="ContentPlaceHolder1_UpdatePanel1">
+	
+            <div class="row">
+                <div id="ContentPlaceHolder1_pnlSearch">
+		
+                    <div class="col s12 m4 l4" id="divSearch">
+                        <ul id="search_div" class="collapsible popout" data-collapsible="accordion">
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">business</i>Search for Firm</div>
+                                <div class="collapsible-body">
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <input name="ctl00$ContentPlaceHolder1$txt_FirmRegNo" type="text" id="ContentPlaceHolder1_txt_FirmRegNo" placeholder="eg: E (1) 1234" class="validate" data-length="18" />
+                                            <label for="txt_FirmRegNo" id="label1">Registration Number</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <input name="ctl00$ContentPlaceHolder1$txt_FirmName" type="text" id="ContentPlaceHolder1_txt_FirmName" placeholder="eg: A &amp; B PROPERTIES" class="validate" />
+                                            <label for="txt_FirmName" id="label2">Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <textarea name="ctl00$ContentPlaceHolder1$txt_FirmCombineAdd" id="ContentPlaceHolder1_txt_FirmCombineAdd" placeholder="eg: Petaling Jaya" class="materialize-textarea"></textarea>
+                                            <label for="txt_FirmCombineAdd" id="label3">Address</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <select name="ctl00$ContentPlaceHolder1$ddl_FirmType" id="ContentPlaceHolder1_ddl_FirmType">
+			<option selected="selected" value="">Select all</option>
+			<option value="Appraisal And Estate Agency">Appraisal And Estate Agency</option>
+			<option value="Appraiser">Appraiser</option>
+			<option value="Estate Agency And Property Management">Estate Agency And Property Management</option>
+			<option value="Estate Agent">Estate Agent</option>
+			<option value="Non Firm">Non Firm</option>
+			<option value="Property Management">Property Management</option>
+			<option value="Valuer">Valuer</option>
+			<option value="Valuer And Estate Agency">Valuer And Estate Agency</option>
+			<option value="Valuer, Estate Agency And Property Management">Valuer, Estate Agency And Property Management</option>
+			<option value="Valuer And Property Manager">Valuer And Property Manager</option>
+		</select>
+                                            <label>Type</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <select name="ctl00$ContentPlaceHolder1$ddl_StateDesc" id="ContentPlaceHolder1_ddl_StateDesc">
+			<option selected="selected" value="">Select all</option>
+			<option value="JOHOR">JOHOR</option>
+			<option value="KEDAH">KEDAH</option>
+			<option value="KELANTAN">KELANTAN</option>
+			<option value="LABUAN">LABUAN</option>
+			<option value="MELAKA">MELAKA</option>
+			<option value="NEGERI SEMBILAN">NEGERI SEMBILAN</option>
+			<option value="PAHANG">PAHANG</option>
+			<option value="PERAK">PERAK</option>
+			<option value="PERLIS">PERLIS</option>
+			<option value="PULAU PINANG">PULAU PINANG</option>
+			<option value="SABAH">SABAH</option>
+			<option value="SARAWAK">SARAWAK</option>
+			<option value="SELANGOR">SELANGOR</option>
+			<option value="TERENGGANU">TERENGGANU</option>
+			<option value="WILAYAH PERSEKUTUAN KUALA LUMPUR">WILAYAH PERSEKUTUAN KUALA LUMPUR</option>
+			<option value="WILAYAH PERSEKUTUAN PUTRAJAYA">WILAYAH PERSEKUTUAN PUTRAJAYA</option>
+		</select>
+                                            <label>State</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col s12 m12 l6 center">
+                                            <a id="ContentPlaceHolder1_btn_ClearFirm" class="waves-effect waves-teal btn-flat" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$btn_ClearFirm&#39;,&#39;&#39;)">Clear</a>
+                                        </div>
+                                        <div class="col s12 m12 l6 center">
+                                            <button onclick="__doPostBack('ctl00$ContentPlaceHolder1$btnSubmitFirm','')" id="ContentPlaceHolder1_btnSubmitFirm" class="btn waves-effect waves-light blue darken-2" type="submit">Search</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">supervisor_account</i>Search for Member</div>
+                                <div class="collapsible-body">
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <input name="ctl00$ContentPlaceHolder1$txt_MemberRegNo" type="text" id="ContentPlaceHolder1_txt_MemberRegNo" placeholder="eg: E 1234" class="validate" data-length="7" />
+                                            <label for="txt_MemberRegNo" id="label4">Registration Number</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <input name="ctl00$ContentPlaceHolder1$txt_MemberName" type="text" id="ContentPlaceHolder1_txt_MemberName" placeholder="eg: Ahmad" class="validate" />
+                                            <label for="txt_MemberName" id="label5">Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <select name="ctl00$ContentPlaceHolder1$ddl_LicenseType" id="ContentPlaceHolder1_ddl_LicenseType">
+			<option selected="selected" value="">Select all</option>
+			<option value="E">Estate Agent</option>
+			<option value="PEA">Probationary Estate Agent</option>
+			<option value="PV">Probationary Valuer</option>
+			<option value="V">Valuer</option>
+		</select>
+                                            <label>Type</label>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row" style="margin-bottom: 10px;">
+                                        <div class="col s12 center">
+                                            <a id="ContentPlaceHolder1_btnShowFirmList" class="waves-effect waves-teal btn-flat" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$btnShowFirmList&#39;,&#39;&#39;)"><i class="material-icons right">filter_list</i>Filter by Firm</a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col s12 m12 l6 center">
+                                            <a id="ContentPlaceHolder1_btn_ClearMember" class="waves-effect waves-teal btn-flat" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$btn_ClearMember&#39;,&#39;&#39;)">Clear</a>
+                                        </div>
+                                        <div class="col s12 m12 l6 center">
+                                            <button onclick="__doPostBack('ctl00$ContentPlaceHolder1$btnSubmitMember','')" id="ContentPlaceHolder1_btnSubmitMember" class="btn waves-effect waves-light blue darken-2" type="submit">Search</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">perm_identity</i>Search for Negotiator</div>
+                                <div class="collapsible-body">
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <input name="ctl00$ContentPlaceHolder1$txt_NegotiatorREN" type="text" id="ContentPlaceHolder1_txt_NegotiatorREN" placeholder="eg: REN 12345" class="validate" data-length="9" />
+                                            <label for="txt_NegotiatorREN" id="label6">REN</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <input name="ctl00$ContentPlaceHolder1$txt_NegotiatorName" type="text" id="ContentPlaceHolder1_txt_NegotiatorName" placeholder="eg: Ahmad" class="validate" />
+                                            <label for="txt_NegotiatorName" id="label7">Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <input name="ctl00$ContentPlaceHolder1$txt_NRIC_No" type="text" id="ContentPlaceHolder1_txt_NRIC_No" placeholder="eg: 92100311XXXX" class="validate" data-length="12" />
+                                            <label for="txt_NRIC_No" id="label8" data-error="Value / format is incorrect">IC Number</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <input name="ctl00$ContentPlaceHolder1$txt_PassportNo" type="text" id="ContentPlaceHolder1_txt_PassportNo" placeholder="eg: A1234567" class="validate" />
+                                            <label for="txt_PassportNo" id="label9">Passport Number</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <input name="ctl00$ContentPlaceHolder1$txt_NegotiatorMobile" type="text" id="ContentPlaceHolder1_txt_NegotiatorMobile" placeholder="eg: 013XXXXXXX" class="validate" data-length="11" />
+                                            <label for="txt_NegotiatorMobile" id="label10" data-error="Value / format is incorrect">Mobile Number</label>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row" style="margin-bottom: 10px;">
+                                        <div class="col s12 center">
+                                            <a id="ContentPlaceHolder1_btnShowMemberList" class="waves-effect waves-teal btn-flat" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$btnShowMemberList&#39;,&#39;&#39;)"><i class="material-icons right">filter_list</i>Filter by Firm</a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col s12 m12 l6 center">
+                                            <a id="ContentPlaceHolder1_btn_ClearNego" class="waves-effect waves-teal btn-flat" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$btn_ClearNego&#39;,&#39;&#39;)">Clear</a>
+                                        </div>
+                                        <div class="col s12 m12 l6 center">
+                                            <button onclick="__doPostBack('ctl00$ContentPlaceHolder1$btnSubmitNegotiator','')" id="ContentPlaceHolder1_btnSubmitNegotiator" class="btn waves-effect waves-light blue darken-2" type="submit">Search</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                
+	</div>
+                <div class="col s12 m8 l8">
+                    <div id="ContentPlaceHolder1_divResult">
+                        <div class="card-panel blue darken-2">
+                            <span class="white-text">Please enter search information.</span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <input type="submit" name="ctl00$ContentPlaceHolder1$hiddenTargetControlForModalPopupMemberList" value="" id="ContentPlaceHolder1_hiddenTargetControlForModalPopupMemberList" style="display: none" />
+            <div id="ContentPlaceHolder1_PanelModelPopupMemberList" class="card-panel" style="display: none; border-radius: 3px; height: auto; overflow: hidden; max-width: 600px;">
+		
+                <div id="ContentPlaceHolder1_UpdatePanelPopupMemberList">
+			
+                        <div class="modal-header" style="padding: 0px;">
+                            <div class="row">
+                                <div class="col s8" style="padding-top: 5px;">
+                                    <strong>Firm / Estate Agent List</strong>
+                                </div>
+                                <div class="col s4">
+                                    <a id="ContentPlaceHolder1_btnCloseModalMember" class="waves-effect waves-teal btn-flat right" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$btnCloseModalMember&#39;,&#39;&#39;)"><i class="material-icons">close</i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row" style="display: flex; align-items: baseline;">
+                                <div class="input-field col s8">
+                                    <input name="ctl00$ContentPlaceHolder1$txt_modalFirm1Name" type="text" id="ContentPlaceHolder1_txt_modalFirm1Name" placeholder="eg: A &amp; B PROPERTIES" class="validate" style="margin: 0;" />
+                                    <label for="txt_modalFirm1Name" id="label14">Firm Name</label>
+                                </div>
+                                <div class="col s4">
+                                    <a id="ContentPlaceHolder1_btn_modalFirm1Search" class="waves-effect waves-teal btn-flat" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$btn_modalFirm1Search&#39;,&#39;&#39;)">Search</a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s12">
+                                    <blockquote id="ContentPlaceHolder1_tut_FirmMember">Search firm to proceed.</blockquote>
+                                    <div id="ctl00_ContentPlaceHolder1_gv_Firm1List" class="RadGrid RadGrid_Windows7" style="height:250px;">
+
+			<!-- 2020.2.617.45 --><input id="ctl00_ContentPlaceHolder1_gv_Firm1List_ClientState" name="ctl00_ContentPlaceHolder1_gv_Firm1List_ClientState" type="hidden" />	</div>
+			
+                                    <div id="ctl00_ContentPlaceHolder1_gv_MemberList" class="RadGrid RadGrid_Windows7" style="height:250px;">
+
+			<input id="ctl00_ContentPlaceHolder1_gv_MemberList_ClientState" name="ctl00_ContentPlaceHolder1_gv_MemberList_ClientState" type="hidden" />	</div>
+			
+                                    
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s3">
+                                    <div id="ContentPlaceHolder1_UpdateProgress2" style="display:none;">
+				
+                                            <div class="preloader-wrapper small active" style="margin-top: 5px;">
+                                                <div class="spinner-layer spinner-blue">
+                                                    <div class="circle-clipper left">
+                                                        <div class="circle"></div>
+                                                    </div>
+                                                    <div class="gap-patch">
+                                                        <div class="circle"></div>
+                                                    </div>
+                                                    <div class="circle-clipper right">
+                                                        <div class="circle"></div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="spinner-layer spinner-red">
+                                                    <div class="circle-clipper left">
+                                                        <div class="circle"></div>
+                                                    </div>
+                                                    <div class="gap-patch">
+                                                        <div class="circle"></div>
+                                                    </div>
+                                                    <div class="circle-clipper right">
+                                                        <div class="circle"></div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="spinner-layer spinner-yellow">
+                                                    <div class="circle-clipper left">
+                                                        <div class="circle"></div>
+                                                    </div>
+                                                    <div class="gap-patch">
+                                                        <div class="circle"></div>
+                                                    </div>
+                                                    <div class="circle-clipper right">
+                                                        <div class="circle"></div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="spinner-layer spinner-green">
+                                                    <div class="circle-clipper left">
+                                                        <div class="circle"></div>
+                                                    </div>
+                                                    <div class="gap-patch">
+                                                        <div class="circle"></div>
+                                                    </div>
+                                                    <div class="circle-clipper right">
+                                                        <div class="circle"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        
+			</div>
+                                </div>
+                                <div class="col s9">
+                                    <div style="margin-top: 5px;">
+                                        <input type="submit" name="ctl00$ContentPlaceHolder1$btnSelectFirmMember" value="Confirm" id="ContentPlaceHolder1_btnSelectFirmMember" disabled="disabled" class="aspNetDisabled btn waves-effect waves-light blue darken-2 right" />
+                                        <a id="ContentPlaceHolder1_btn_modalShowAllFirm1" class="waves-effect waves-teal btn-flat right" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$btn_modalShowAllFirm1&#39;,&#39;&#39;)">Reset</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+		</div>
+            
+	</div>
+            <div id="ContentPlaceHolder1_UpdateProgress1" style="display:none;">
+		
+                    <div style="position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; z-index: 8; background-color: rgba(0, 0, 0, 0.5);"></div>
+                    <div style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 9;">
+                        <div class="preloader-wrapper big active">
+                            <div class="spinner-layer spinner-blue">
+                                <div class="circle-clipper left">
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="gap-patch">
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="circle-clipper right">
+                                    <div class="circle"></div>
+                                </div>
+                            </div>
+
+                            <div class="spinner-layer spinner-red">
+                                <div class="circle-clipper left">
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="gap-patch">
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="circle-clipper right">
+                                    <div class="circle"></div>
+                                </div>
+                            </div>
+
+                            <div class="spinner-layer spinner-yellow">
+                                <div class="circle-clipper left">
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="gap-patch">
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="circle-clipper right">
+                                    <div class="circle"></div>
+                                </div>
+                            </div>
+
+                            <div class="spinner-layer spinner-green">
+                                <div class="circle-clipper left">
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="gap-patch">
+                                    <div class="circle"></div>
+                                </div>
+                                <div class="circle-clipper right">
+                                    <div class="circle"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+	</div>
+        
+</div>
+
+            
+
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.ModalPopupBehavior, {"BackgroundCssClass":"modalBackground","PopupControlID":"ContentPlaceHolder1_PanelModelPopupMemberList","dynamicServicePath":"/LPPEH_Search.aspx","id":"ModalPopupBehaviorMemberList"}, null, null, $get("ContentPlaceHolder1_hiddenTargetControlForModalPopupMemberList"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadGrid, {"ClientID":"ctl00_ContentPlaceHolder1_gv_Firm1List","ClientSettings":{"AllowAutoScrollOnDragDrop":true,"EnableRowHoverStyle":true,"EnablePostBackOnRowClick":true,"ShouldCreateRows":true,"DataBinding":{},"Selecting":{"CellSelectionMode":0,"AllowRowSelect":true,"EnableDragToSelectRows":true},"Scrolling":{"AllowScroll":true,"SaveScrollPosition":true,"ScrollHeight":"300px","UseStaticHeaders":true},"Resizing":{},"ClientMessages":{},"KeyboardNavigationSettings":{"AllowActiveRowCycle":false,"EnableKeyboardShortcuts":true,"FocusKey":89,"InitInsertKey":73,"RebindKey":82,"ExitEditInsertModeKey":27,"UpdateInsertItemKey":13,"DeleteActiveRow":127,"ExpandDetailTableKey":39,"CollapseDetailTableKey":37,"MoveDownKey":40,"MoveUpKey":38,"SaveChangesKey":85,"CancelChangesKey":81},"Animation":{},"Virtualization":{}},"Skin":"Windows7","SortingSettings":{"SortToolTip":"Click here to sort","SortedAscToolTip":"Sorted asc","SortedDescToolTip":"Sorted desc","SortedBackColor":{"R":0,"G":0,"B":0,"A":0,"IsKnownColor":false,"IsEmpty":true,"IsNamedColor":false,"IsSystemColor":false,"Name":"0"},"EnableSkinSortStyles":true,"ViewState":{}},"UniqueID":"ctl00$ContentPlaceHolder1$gv_Firm1List","_activeRowIndex":"","_controlToFocus":"","_currentPageIndex":0,"_defaultDateTimeFormat":"M/d/yyyy h:mm:ss tt","_editIndexes":"[]","_embeddedSkin":true,"_freezeText":"Freeze","_gridTableViewsData":"[{\"ClientID\":\"\",\"UniqueID\":null,\"PageSize\":10,\"PageCount\":1,\"EditMode\":\"EditForms\",\"AllowPaging\":true,\"CurrentPageIndex\":0,\"VirtualItemCount\":0,\"AllowMultiColumnSorting\":true,\"AllowNaturalSort\":true,\"AllowFilteringByColumn\":false,\"PageButtonCount\":10,\"HasDetailTables\":false,\"HasMultiHeaders\":false,\"CheckListWebServicePath\":\"\",\"GroupLoadMode\":\"Server\",\"PagerAlwaysVisible\":true,\"sliderClientID\":\"\",\"sliderLabelClientID\":\"\",\"IsItemInserted\":false,\"clientDataKeyNames\":[],\"hasDetailItemTemplate\":false,\"_dataBindTemplates\":false,\"_selectedItemStyle\":\"\",\"_selectedItemStyleClass\":\"rgSelectedRow\",\"_columnsData\":[{\"UniqueName\":\"ExpandColumn\",\"Resizable\":false,\"Reorderable\":false,\"Selectable\":false,\"Groupable\":false,\"ColumnType\":\"GridExpandColumn\",\"ColumnGroupName\":\"\",\"Editable\":false,\"DataTypeName\":\"System.String\",\"Display\":true},{\"UniqueName\":\"TemplateColumn\",\"Resizable\":true,\"Reorderable\":true,\"Selectable\":true,\"Groupable\":true,\"ColumnType\":\"GridTemplateColumn\",\"ColumnGroupName\":\"\",\"Editable\":false,\"DataTypeName\":\"System.String\",\"DataField\":\"\",\"Display\":true},{\"UniqueName\":\"FirmName\",\"Resizable\":true,\"Reorderable\":true,\"Selectable\":true,\"Groupable\":true,\"ColumnType\":\"GridTemplateColumn\",\"ColumnGroupName\":\"\",\"Editable\":false,\"SortExpression\":\"FirmName\",\"DataTypeName\":\"System.String\",\"DataField\":\"\",\"Display\":true},{\"UniqueName\":\"NegoCount\",\"Resizable\":true,\"Reorderable\":true,\"Selectable\":true,\"Groupable\":true,\"ColumnType\":\"GridTemplateColumn\",\"ColumnGroupName\":\"\",\"Editable\":false,\"SortExpression\":\"NegoCount\",\"DataTypeName\":\"System.String\",\"DataField\":\"\",\"Display\":true}]}]","_loadingText":"Loading...","_masterClientID":"","_readyText":"Ready","_shouldFocusOnPage":false,"_statusLabelID":"","_unfreezeText":"Unfreeze","allowMultiRowSelection":false,"clientStateFieldID":"ctl00_ContentPlaceHolder1_gv_Firm1List_ClientState","renderMode":1}, null, null, $get("ctl00_ContentPlaceHolder1_gv_Firm1List"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadGrid, {"ClientID":"ctl00_ContentPlaceHolder1_gv_MemberList","ClientSettings":{"AllowAutoScrollOnDragDrop":true,"EnableRowHoverStyle":true,"EnablePostBackOnRowClick":true,"ShouldCreateRows":true,"DataBinding":{},"Selecting":{"CellSelectionMode":0,"AllowRowSelect":true,"EnableDragToSelectRows":true},"Scrolling":{"AllowScroll":true,"SaveScrollPosition":true,"ScrollHeight":"300px","UseStaticHeaders":true},"Resizing":{},"ClientMessages":{},"KeyboardNavigationSettings":{"AllowActiveRowCycle":false,"EnableKeyboardShortcuts":true,"FocusKey":89,"InitInsertKey":73,"RebindKey":82,"ExitEditInsertModeKey":27,"UpdateInsertItemKey":13,"DeleteActiveRow":127,"ExpandDetailTableKey":39,"CollapseDetailTableKey":37,"MoveDownKey":40,"MoveUpKey":38,"SaveChangesKey":85,"CancelChangesKey":81},"Animation":{},"Virtualization":{}},"Skin":"Windows7","SortingSettings":{"SortToolTip":"Click here to sort","SortedAscToolTip":"Sorted asc","SortedDescToolTip":"Sorted desc","SortedBackColor":{"R":0,"G":0,"B":0,"A":0,"IsKnownColor":false,"IsEmpty":true,"IsNamedColor":false,"IsSystemColor":false,"Name":"0"},"EnableSkinSortStyles":true,"ViewState":{}},"UniqueID":"ctl00$ContentPlaceHolder1$gv_MemberList","_activeRowIndex":"","_controlToFocus":"","_currentPageIndex":0,"_defaultDateTimeFormat":"M/d/yyyy h:mm:ss tt","_editIndexes":"[]","_embeddedSkin":true,"_freezeText":"Freeze","_gridTableViewsData":"[{\"ClientID\":\"\",\"UniqueID\":null,\"PageSize\":10,\"PageCount\":1,\"EditMode\":\"EditForms\",\"AllowPaging\":true,\"CurrentPageIndex\":0,\"VirtualItemCount\":0,\"AllowMultiColumnSorting\":true,\"AllowNaturalSort\":true,\"AllowFilteringByColumn\":false,\"PageButtonCount\":10,\"HasDetailTables\":false,\"HasMultiHeaders\":false,\"CheckListWebServicePath\":\"\",\"GroupLoadMode\":\"Server\",\"PagerAlwaysVisible\":true,\"sliderClientID\":\"\",\"sliderLabelClientID\":\"\",\"IsItemInserted\":false,\"clientDataKeyNames\":[],\"hasDetailItemTemplate\":false,\"_dataBindTemplates\":false,\"_selectedItemStyle\":\"\",\"_selectedItemStyleClass\":\"rgSelectedRow\",\"_columnsData\":[{\"UniqueName\":\"ExpandColumn\",\"Resizable\":false,\"Reorderable\":false,\"Selectable\":false,\"Groupable\":false,\"ColumnType\":\"GridExpandColumn\",\"ColumnGroupName\":\"\",\"Editable\":false,\"DataTypeName\":\"System.String\",\"Display\":true},{\"UniqueName\":\"TemplateColumn\",\"Resizable\":true,\"Reorderable\":true,\"Selectable\":true,\"Groupable\":true,\"ColumnType\":\"GridTemplateColumn\",\"ColumnGroupName\":\"\",\"Editable\":false,\"DataTypeName\":\"System.String\",\"DataField\":\"\",\"Display\":true},{\"UniqueName\":\"MemberName\",\"Resizable\":true,\"Reorderable\":true,\"Selectable\":true,\"Groupable\":true,\"ColumnType\":\"GridTemplateColumn\",\"ColumnGroupName\":\"\",\"Editable\":false,\"SortExpression\":\"MemberName\",\"DataTypeName\":\"System.String\",\"DataField\":\"\",\"Display\":true},{\"UniqueName\":\"NegoCount\",\"Resizable\":true,\"Reorderable\":true,\"Selectable\":true,\"Groupable\":true,\"ColumnType\":\"GridTemplateColumn\",\"ColumnGroupName\":\"\",\"Editable\":false,\"SortExpression\":\"NegoCount\",\"DataTypeName\":\"System.String\",\"DataField\":\"\",\"Display\":true}]}]","_loadingText":"Loading...","_masterClientID":"","_readyText":"Ready","_shouldFocusOnPage":false,"_statusLabelID":"","_unfreezeText":"Unfreeze","allowMultiRowSelection":false,"clientStateFieldID":"ctl00_ContentPlaceHolder1_gv_MemberList_ClientState","renderMode":1}, null, null, $get("ctl00_ContentPlaceHolder1_gv_MemberList"));
+});
+//]]>
+</script>
+</form>
+        </div>
+    </main>
+    <footer class="page-footer">
+        <div class="container"></div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2020 Copyright Lembaga Penilai, Pentaksir, Ejen Harta Tanah dan Pengurus Harta (LPPEH). All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="/Content/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="/Content/js/materialize.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            ReBind();
+
+            //$('.collapsible').collapsible('open', 0);
+        });
+
+        var prm = Sys.WebForms.PageRequestManager.getInstance();
+
+        prm.add_endRequest(function () {
+            ReBind();
+
+            jQuery('#label1').addClass('active');
+            jQuery('#label2').addClass('active');
+            jQuery('#label3').addClass('active');
+            jQuery('#label4').addClass('active');
+            jQuery('#label5').addClass('active');
+            jQuery('#label6').addClass('active');
+            jQuery('#label7').addClass('active');
+            jQuery('#label8').addClass('active');
+            jQuery('#label9').addClass('active');
+            jQuery('#label10').addClass('active');
+            jQuery('#label11').addClass('active');
+            jQuery('#label12').addClass('active');
+            jQuery('#label13').addClass('active');
+            jQuery('#label14').addClass('active');
+        });
+
+        function ReBind() {
+            $('.collapsible').collapsible();
+            $('select').material_select();
+            $('input#txt_FirmRegNo, input#txt_MemberRegNo, input#txt_NegotiatorREN, input#txt_NRIC_No, input#txt_NegotiatorMobile').characterCounter();
+            $('.modal').modal();
+            $('.tooltipped').tooltip({ delay: 50 });
+        }
+
+        $(document).keypress(
+            function (event) {
+                if (event.which == '13') {
+                    Materialize.toast('Enter key is disabled. Please use provided buttons to proceed.', 4000);
+                    event.preventDefault();
+                }
+            });
+    </script>
+</body>
+</html>
